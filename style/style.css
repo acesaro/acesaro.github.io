@@ -1,0 +1,18 @@
+body
+{
+    font: 14px Calibri, Tahoma, Helvetica, Arial, sans-serif;
+    color: #000000;
+    background-image:url('/Users/acesaro/git/amcpu/img/bg_plaid_bw.png');
+    text-align: left;
+}
+
+div.transbox
+{
+    width:550px;
+    height:100%;
+    margin:100px 0px 0px 140px;
+    background-color:#ffffff;
+    /*border:1px solid black;*/
+    opacity:0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
+}
