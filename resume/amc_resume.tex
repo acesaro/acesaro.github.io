@@ -26,29 +26,29 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-	\begin{flushleft}\selectfont\Large\scshape#1\end{flushleft}
+  \begin{flushleft}\selectfont\Large\scshape#1\end{flushleft}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
-	\textbf{\selectfont\normalsize#1}
-	\begin{itemize}
-	\vspace{3pt}
+  \vspace{4pt}
+  \textbf{\selectfont\normalsize#1}
+  \begin{itemize}
+  \vspace{3pt}
 }{
-	\end{itemize}
+  \end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-	\vspace{-4pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+  \vspace{-4pt}
+  \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-	\vspace{-1pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+  \vspace{-1pt}
+  \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A resbigitem is a complex list element for stuff like jobs and education:
@@ -56,28 +56,28 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-	\vspace{-5pt}
-	\item
-	\textbf{#1} - #2 \\
-	\textit{#3}
+  \vspace{-5pt}
+  \item
+  \textbf{#1} - #2 \\
+  \textit{#3}
 }
 
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
-	\resbigitem{#1}{#2}{#3}
-	\vspace{-2pt}
-	\begin{itemize}
+  \resbigitem{#1}{#2}{#3}
+  \vspace{-2pt}
+  \begin{itemize}
 }{
-	\end{itemize}
+  \end{itemize}
 }
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-	\resitem{\textbf{#1}}
-	\vspace{-5pt}
-	\begin{itemize}
+  \resitem{\textbf{#1}}
+  \vspace{-5pt}
+  \begin{itemize}
 }{
-	\end{itemize}
+  \end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,7 +100,7 @@
 
 \begin{ressection}{Summary}
 
-	\resitem{A distributed systems and Internet services engineer working to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction.  I focus my efforts in distributed computer systems/architecture, configuration management, optimization, security, implementation and operational excellence.  I have a passion for lifelong learning and an affinity to emerging technologies and their application to business enhancement.}
+  \resitem{A distributed systems and Internet services engineer working to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems/architecture, configuration management, optimization, security, implementation and operational excellence. I have a passion for lifelong learning and an affinity to emerging technologies and their application to business enhancement.}
 
 \end{ressection}
 
@@ -108,81 +108,81 @@
 
 \begin{ressection}{Technical Skills}
 
-	\resitem{\textbf{Hardware (Installation \& Maintenance):} Oracle/Sun Enterprise class SPARC \& x86\_64 servers, Commidity x86\_64 based servers; \textbf{Storage}: Oracle/Sun direct attached fibre channel disk arrays, VxVM \& ZFS administration, Linux mdadm/LVM}
+  \resitem{\textbf{Operating Systems, Virtualization \& Automation:} Solaris 9/10 (SPARC \& x86): Advanced, Linux 2.6.x(Distros: RHEL/CentOS 5/6, Debian/Ubuntu, Gentoo): Advanced, Free/Net/OpenBSD: Intermediate, Windows Server 2003/2008: Intermediate, OpenVMS: Novice; VirtualBox: Intermediate, Solaris Containers/Zones: Intermediate; Cobbler/Kickstart: Intermediate, Ansible: Intermediate, Puppet: Intermediate, SaltStack: Intermediate}
 
-	\resitem{\textbf{Operating Systems, Virtualization \& Automation:} Solaris 9/10 (SPARC \& x86): Advanced, Linux 2.6.x(Distros: RHEL/CentOS 5/6, Debian/Ubuntu, Gentoo): Advanced, Free/Net/OpenBSD: Intermediate, Windows Server 2003/2008: Intermediate, OpenVMS: Novice; VirtualBox: Intermediate, Solaris Containers/Zones: Intermediate; Cobbler/Kickstart: Intermediate, Puppet: Intermediate, SaltStack: Intermediate}
+  \resitem{\textbf{Database:} MySQL: Intermediate, Oracle 9i/10g/11g: Intermediate, PostgreSQL: Intermediate, MS SQL Server: Novice, SQL: Intermediate, PL/SQL: Novice, Database replication/HA concepts: Intermediate}
 
-	\resitem{\textbf{Database:} MySQL: Intermediate, Oracle 9i/10g/11g: Intermediate, PostgreSQL: Intermediate, MS SQL Server: Novice, SQL: Intermediate, PL/SQL: Novice, Database replication/HA concepts: Intermediate}
+  \resitem{\textbf{Software Development:} Python: Intermediate, Perl: Intermediate, Shell (KSH/Bash/sed/awk): Advanced, PHP: Intermediate, Java: Intermediate, C: Intermediate, C++: Novice, x86 Assembly: Novice, SQL: Intermediate, HTML: Advanced, CSS: Intermediate,  \LaTeX: Intermediate,  Web Services: Intermediate, gcc/gdb: Intermediate, Subversion: Intermediate, git: Intermediate, Perforce: Intermediate, MS Visual Studio: Novice}
 
-	\resitem{\textbf{Programming/Scripting/Source Control:} Perl: Intermediate, Shell (KSH/BASH/sed/awk): Advanced, Python: Intermediate, PHP: Intermediate, Java: Intermediate, C: Intermediate, C++: Novice, SQL: Intermediate, XHTML: Advanced, CSS: Intermediate,  \LaTeX: Intermediate,  SOAP/XML/Web Services: Intermediate, gcc/gdb: Novice, Subversion: Intermediate, git: Intermediate, mercurial: Novice, MS Visual Studio: Novice}
+  \resitem{\textbf{Network Management Tools/Systems:} Netcool/OMNIbus: Advanced, NerveCenter: Intermediate, eHealth: Advanced, Remedy ARS: Advanced, ZABBIX: Advanced, SNMP MIBs: Advanced, Spectrum: Novice, Splunk>: Advanced, Logstash/Elasticsearch: Intermediate, OPNET IT Guru/IT Sentinel/ACE: Intermediate, Cacti/RRDTool: Intermediate, Graphite: Advanced}
 
-	\resitem{\textbf{Network Management Systems:} Netcool/OMNIbus: Advanced, NerveCenter: Intermediate, eHealth: Advanced, Remedy ARS: Advanced, ZABBIX: Advanced, SNMP MIBs: Advanced, Spectrum: Novice, Splunk>: Advanced, Graylog2: Novice, OPNET IT Guru/IT Sentinel/ACE: Intermediate, Cacti/RRDTool: Intermediate}
+  \resitem{\textbf{Network Services:} Apache httpd: Advanced, nginx: Intermediate, Apache Tomcat: Intermediate, Samba(SMB/CIFS): Advanced, NFS: Intermediate, LDAP: Advanced, SMTP(Sendmail/Postfix): Intermediate, Syslog-NG: Advanced, DNS (BIND, djbdns): Advanced, OpenSSH: Advanced, FTP: Intermediate, NNTP: Novice}
 
-	\resitem{\textbf{Network Services:} Apache httpd: Advanced, nginx: Intermediate, Apache Tomcat: Intermediate, Samba(SMB/CIFS): Advanced, NFS: Intermediate, LDAP: Advanced, SMTP(Sendmail/Postfix): Intermediate, Syslog-NG: Advanced, DNS (BIND, djbdns): Advanced, OpenSSH: Advanced, FTP: Intermediate, NNTP: Novice}
+  \resitem{\textbf{Computer Networking:} Configuration of TCP/IP stack on UNIX\&Windows systems, IP Subnetting/Supernetting, Competency of OSI model and TCP/IP concepts, VLANs, DHCP, BGP anycast, Cisco/Brocade switches and load balancers: Novice, Linux iptables: Intermediate, TCP tuning: Intermediate, tcpdump/Wireshark: Intermediate, Network security concepts: Intermediate}
 
-	\resitem{\textbf{Computer Networking:} Configuration of TCP/IP stack on UNIX\&Windows systems, IP Subnetting/Supernetting, Full competency of OSI model and TCP/IP concepts, VLANs, DHCP, BGP anycast, Cisco/Brocade switches and load balancers: Novice, Linux iptables: Intermediate, TCP tuning: Intermediate}
+  \resitem{\textbf{Hardware (Installation \& Maintenance):} Oracle/Sun Enterprise class SPARC \& x86\_64 servers, Commidity x86\_64 based servers; \textbf{Storage}: Oracle/Sun direct attached fibre channel disk arrays, VxVM \& ZFS administration, Linux mdadm/LVM}
 
-	\resitem{\textbf{Productivity Software:} vi/vim, MS Office Suite, OpenOffice.org, MS Visio, MS Project, Adobe Photoshop, Acrobat, GIMP, MS Sharepoint}
+  \resitem{\textbf{Productivity Software:} vi/vim, MS Office Suite, OpenOffice.org, MS Visio, MS Project, Adobe Photoshop, Acrobat, GIMP, MS Sharepoint}
 
-	\resitem{\textbf{Certification/Training:} Oracle 10g Database Administrator Workshop I, LISA 2006 Conference Coursework, OPNET ITGuru QuickStart Certificate, SAP XI TBIT-40 Training}
-	
+  \resitem{\textbf{Certification/Training:} Oracle 10g Database Administrator Workshop I, LISA 2006 Conference Coursework, OPNET ITGuru QuickStart Certificate, SAP XI TBIT-40 Training}
+  
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{ressection}{Professional Experience}
 
-	\begin{ressubsec}{Electronic Arts, American Football Online Services}{Orlando, FL}{Systems Engineer/Architect: July 2012 - Present}
+  \begin{ressubsec}{Electronic Arts, American Football Online Services}{Orlando, FL}{Systems Engineer/Architect: July 2012 - Present}
 
-		\ressubitem{\textbf{Role:} Systems engineer leading online gaming systems operations and designing next generation online gaming infrastructures supporting the Madden and NCAA Football titles for all current gaming platforms.}
+    \ressubitem{\textbf{Role:} Systems engineer leading online gaming systems operations and designing next generation online gaming infrastructures supporting the Madden and NCAA Football titles for all current gaming platforms.}
 
-		\ressubitem{\textbf{Description:} Responsible for systems planning and implementation supporting online gaming servers for American Football products. Leading an operations support team with technical guidance and toolset design/development. Building an automation solution for the management of a heterogenous Linux/Windows Cloud/Physical server infrastructure including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing.}
+    \ressubitem{\textbf{Description:} Responsible for systems planning and implementation supporting online gaming servers for American Football products. Leading an operations support team with technical guidance and toolset design/development. Building an automation solution for the management of a heterogenous Linux/Windows Cloud/Physical server infrastructure including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Deveopment and continuous evolution of application level monitoring and event analysis toolset utilizing Graphite, Logstash/Elasticsearch/Kibana, custom Python scripts, and web interfaces built with HTML/Javascript (AngularJS, d3, jQuery). Consistently identifying development process automation opportunities and rolling them out with tools like Vagrant, Ansible, and custom scripting. Planning, design and rollout of appropriate scaling of storage and computing resources for current and forecasted capacity demands of online gaming systems.}
 
-	\end{ressubsec}
-	
-	\begin{ressubsec}{Highwinds Network Group, CDN Operations}{Winter Park, FL}{Systems Engineer: July 2011 - July 2012}
+  \end{ressubsec}
+  
+  \begin{ressubsec}{Highwinds Network Group, CDN Operations}{Winter Park, FL}{Systems Engineer: July 2011 - July 2012}
 
-		\ressubitem{\textbf{Role:} Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.}
+    \ressubitem{\textbf{Role:} Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.}
 
-		\ressubitem{\textbf{Description:} Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents.  This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.  Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.  Design next generation infrastructure services such as DNS, LDAP, RADIUS, configuration management, and centralized system logging. Monitor and resolve hardware and systems issues as they appear such as disk failures, component diagnostics, network configuration and process/daemon management. Automation of commonly performed and complex tasks using BASH, Perl and Python scripting. Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl.}
+    \ressubitem{\textbf{Description:} Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents. This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration. Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services. Design next generation infrastructure services such as DNS, LDAP, RADIUS, configuration management, and centralized system logging. Monitor and resolve hardware and systems issues as they appear such as disk failures, component diagnostics, network configuration and process/daemon management. Automation of commonly performed and complex tasks using BASH, Perl and Python scripting. Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl.}
 
-		\ressubitem{\textbf{Key Milestones:} Design, configuration and implementation of a redundant and distributed ZABBIX-based network monitoring system, including JIRA ticketing integration and replicated/partitioned PostgreSQL database backend; Consolidation of six LDAP trees with redundant user accounts to a single tree utilizing attributes for access control and authorization and replication with OpenLDAP/SyncRepl; Operating system migration of over 300 physical servers from Gentoo Linux to CentOS 6.0 utilizing Cobbler for Kickstart/DHCP standardization, while live production traffic continued to serve from the POPs; Rebuilt core storage servers (Sun Fire X4500/4540) while maintaining ZFS zpools through reimport and validation}
+    \ressubitem{\textbf{Key Milestones:} Design, configuration and implementation of a redundant and distributed ZABBIX-based network monitoring system, including JIRA ticketing integration and replicated/partitioned PostgreSQL database backend; Consolidation of six LDAP trees with redundant user accounts to a single tree utilizing attributes for access control and authorization and replication with OpenLDAP/SyncRepl; Operating system migration of over 300 physical servers from Gentoo Linux to CentOS 6.0 utilizing Cobbler for Kickstart/DHCP standardization, while live production traffic continued to serve from the POPs; Rebuilt core storage servers (Sun Fire X4500/4540) while maintaining ZFS zpools through reimport and validation}
 
-		\ressubitem{\textbf{Awards:} Employee of the year nomination during first year of service.}
+    \ressubitem{\textbf{Awards:} Employee of the year nomination during first year of service.}
 
-	\end{ressubsec}
+  \end{ressubsec}
 
-	\begin{ressubsec}{CenturyLink Corporation, Network Systems Management}{Winter Park, FL}{IS Technical Team Lead: March 2006 - July 2011}
+  \begin{ressubsec}{CenturyLink Corporation, Network Systems Management}{Winter Park, FL}{IS Technical Team Lead: March 2006 - July 2011}
 
-		\ressubitem{\textbf{Role:} Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems.}
-		
-		\ressubitem{\textbf{Description:} Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems.  Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.}
+    \ressubitem{\textbf{Role:} Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems.}
+    
+    \ressubitem{\textbf{Description:} Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems. Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.}
 
-		\ressubitem{\textbf{Key Milestones:} Implementation of enterprise class LDAP infrastructure for a hetergeneous UNIX/Windows environment; Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy; Installation and configuration of a Zabbix monitoring system for all systems' surveillance; Writing of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information; Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users; Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink.}
-		
-		\ressubitem{\textbf{Awards:} 2010 Outstanding Service Provider recipient; 15 "Acclaim" awards and thank-you's received for excellence in assigned tasks and exceeding expectations in customer service; Recognized and rewarded as a key resource in the initial systems integration and conversion activities for the CenturyTel/EMBARQ merger.}
+    \ressubitem{\textbf{Key Milestones:} Implementation of enterprise class LDAP infrastructure for a hetergeneous UNIX/Windows environment; Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy; Installation and configuration of a Zabbix monitoring system for all systems' surveillance; Writing of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information; Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users; Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink.}
+    
+    \ressubitem{\textbf{Awards:} 2010 Outstanding Service Provider recipient; 15 "Acclaim" awards and thank-you's received for excellence in assigned tasks and exceeding expectations in customer service; Recognized and rewarded as a key resource in the initial systems integration and conversion activities for the CenturyTel/EMBARQ merger.}
 
-	\end{ressubsec}
+  \end{ressubsec}
 
-	\begin{ressubsec}{Siemens Power Generation, Global Enterprise Architecture}{Orlando, FL}{IT Architect: January 2004 - March 2006}
+  \begin{ressubsec}{Siemens Power Generation, Global Enterprise Architecture}{Orlando, FL}{IT Architect: January 2004 - March 2006}
 
-		\ressubitem{\textbf{Description:} Gathered requirements from business personnel for various problems and inefficiencies and researched and compared products to fill requests from the business for various tools and solutions.  Participated in forecasting and planning of IT projects and derived strategies for technology related projects.  Assumed the role of infrastructure architect in numerous PoC and pilot projects with the business including BAM systems, shop floor scheduling, migration of systems to remote outsourced location, SAP Enterprise Portal, and extranet architecture.}
+    \ressubitem{\textbf{Description:} Gathered requirements from business personnel for various problems and inefficiencies and researched and compared products to fill requests from the business for various tools and solutions. Participated in forecasting and planning of IT projects and derived strategies for technology related projects. Assumed the role of infrastructure architect in numerous PoC and pilot projects with the business including BAM systems, shop floor scheduling, migration of systems to remote outsourced location, SAP Enterprise Portal, and extranet architecture.}
 
-		\ressubitem{\textbf{Key Milestones:} Utilized OPNET ITGuru to capture application traces on the network and performed analysis within the tool to help alleviate poor response times in enterprise applications; Installation, testing, and administration of applications such as Borland Caliber RM, OPNET ITGuru and ITSentinel, Saphir, SAP XI}
-		
-	\end{ressubsec}
+    \ressubitem{\textbf{Key Milestones:} Utilized OPNET ITGuru to capture application traces on the network and performed analysis within the tool to help alleviate poor response times in enterprise applications; Installation, testing, and administration of applications such as Borland Caliber RM, OPNET ITGuru and ITSentinel, Saphir, SAP XI}
+    
+  \end{ressubsec}
 
-%	\begin{ressubsec}{UCF Student Government Association - Knightcast Radio Station}{Orlando, FL}{Technical Director: May 2005-December 2005}
+%  \begin{ressubsec}{UCF Student Government Association - Knightcast Radio Station}{Orlando, FL}{Technical Director: May 2005-December 2005}
 
-%		\ressubitem{Administration of station computer network, MS Windows workstations and Linux servers, audio equipment, Shoutcast internet radio daemon}
+%    \ressubitem{Administration of station computer network, MS Windows workstations and Linux servers, audio equipment, Shoutcast internet radio daemon}
 
-%		\ressubitem{On call assistance of radio show participants and DJs, including officer duties and needs}
+%    \ressubitem{On call assistance of radio show participants and DJs, including officer duties and needs}
 
-%		\ressubitem{Development and maintenance of station website (PHP/mySQL/apache technology)}
+%    \ressubitem{Development and maintenance of station website (PHP/mySQL/apache technology)}
 
-%		\ressubitem{Administration of e-mail server and systems monitoring system (Cacti) utilizing SNMP}
+%    \ressubitem{Administration of e-mail server and systems monitoring system (Cacti) utilizing SNMP}
 
-%	\end{ressubsec}
+%  \end{ressubsec}
 
 \end{ressection}
 
@@ -190,25 +190,25 @@
 
 \begin{ressection}{Education}
 
-	\begin{ressubsec}{University of Central Florida}{Orlando, FL}{Master of Science - Management Information Systems}
+  \begin{ressubsec}{University of Central Florida}{Orlando, FL}{Master of Science - Management Information Systems}
 
-		\ressubitem{\textbf{Concentration:} Enterprise IT Management}
-		
-		\ressubitem{\textbf{Relevant coursework:} ERP Implementation, Telecommunication Management, Business Intelligence Systems, Systems Analysis \& Design, IT Project Management, Information Resource Management}
+    \ressubitem{\textbf{Concentration:} Enterprise IT Management}
+    
+    \ressubitem{\textbf{Relevant coursework:} ERP Implementation, Telecommunication Management, Business Intelligence Systems, Systems Analysis \& Design, IT Project Management, Information Resource Management}
 
-		\ressubitem{\textbf{Graduated:} Fall 2008}
+    \ressubitem{\textbf{Graduated:} Fall 2008}
 
-	\end{ressubsec}
+  \end{ressubsec}
 
-	\begin{ressubsec}{University of Central Florida}{Orlando, FL}{Bachelor of Science - Information Technology}
+  \begin{ressubsec}{University of Central Florida}{Orlando, FL}{Bachelor of Science - Information Technology}
 
-		\ressubitem{\textbf{Concentration:} Computer Networking and System Administration}
-		
-		\ressubitem{\textbf{Relevant coursework:} Network Lab, Database Systems, Web Systems, Wide Area Networks, Computer Science, C Programming, Computer Architectures, Distributed Systems Programming, Network Security, Information Theory}
+    \ressubitem{\textbf{Concentration:} Computer Networking and System Administration}
+    
+    \ressubitem{\textbf{Relevant coursework:} Network Lab, Database Systems, Web Systems, Wide Area Networks, Computer Science, C Programming, Computer Architectures, Distributed Systems Programming, Network Security, Information Theory}
 
-		\ressubitem{\textbf{Graduated:} Spring 2005}
+    \ressubitem{\textbf{Graduated:} Spring 2005}
 
-	\end{ressubsec}
+  \end{ressubsec}
 
 \end{ressection}
 
@@ -216,9 +216,9 @@
 
 %\begin{ressection}{Projects \& Activities}
 
-%	\resitem{Volunteered technical knowledge to the Knightcast online radio station at UCF to rebuild their website, install and configure a new file server, and install a directory services solution for the network using OpenLDAP and Samba.}
-	
-%	\resitem{Management of a home network including 2 Sun SPARC workstations, a Macintosh desktop, a Linux laptop, and a Linux-based home theatre PC.  Services running within the network and externally facing include file sharing (NFS/CIFS), web page hosting, media to television, caching DNS, and database management systems.}
+%  \resitem{Volunteered technical knowledge to the Knightcast online radio station at UCF to rebuild their website, install and configure a new file server, and install a directory services solution for the network using OpenLDAP and Samba.}
+  
+%  \resitem{Management of a home network including 2 Sun SPARC workstations, a Macintosh desktop, a Linux laptop, and a Linux-based home theatre PC. Services running within the network and externally facing include file sharing (NFS/CIFS), web page hosting, media to television, caching DNS, and database management systems.}
 
 %\end{ressection}
 
@@ -226,7 +226,7 @@
 
 %\begin{ressection}{Special Interests}
 
-%	\resitem{Music, Technology, SCUBA Diving, Cycling, Continuing Education}
+%  \resitem{Music, Technology, SCUBA Diving, Cycling, Continuing Education}
 
 %\end{ressection}
 
