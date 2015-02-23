@@ -6,11 +6,11 @@ body {
   color: #FFFFFF;
   background: #000000;
   text-align: left;
-  }
+}
 p {
   margin-top: 0px;
   text-align: left;
-  }
+}
 
 h1 {
   font-size: 28px;
@@ -33,14 +33,14 @@ h1#header a {
 a:link {
   font-weight: bold;
   text-decoration: none;
-  }
+}
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  }
+}
 a:hover, a:active {
   text-decoration: underline;
-  }
+}
 
 /* now on to the divs! */
 
