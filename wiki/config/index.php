@@ -50,6 +50,7 @@ require_once( "includes/Namespace.php" );
 	<title>MediaWiki <?php echo( $wgVersion ); ?> Installation</title>
 	<style type="text/css">
 
+                @import "/style/solarized-dark.css";
 		@import "../skins/monobook/main.css";
 
 		.env-check {
