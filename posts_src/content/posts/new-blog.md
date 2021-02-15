@@ -1,7 +1,7 @@
 ---
 title: "Working with Hugo"
 date: 2021-02-15T11:13:59-05:00
-draft: true
+draft: false
 ---
 
 I've read about [Hugo](https://gohugo.io) for a while and finally decided to

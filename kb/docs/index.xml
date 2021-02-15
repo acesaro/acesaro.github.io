@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on amcpu knowledge base</title>
+    <link>http://amcpu.org/kb/docs/</link>
+    <description>Recent content in Docs on amcpu knowledge base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://amcpu.org/kb/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sites</title>
+      <link>http://amcpu.org/kb/docs/sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://amcpu.org/kb/docs/sites/</guid>
+      <description>2021-02-14 #   https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/  </description>
+    </item>
+    
+  </channel>
+</rss>

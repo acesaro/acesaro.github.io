@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://amcpu.org/kb/</loc>
+  </url>
+  
+  <url>
+    <loc>http://amcpu.org/kb/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://amcpu.org/kb/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://amcpu.org/kb/docs/sites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://amcpu.org/kb/tags/</loc>
+  </url>
+  
+</urlset>
