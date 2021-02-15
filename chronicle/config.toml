@@ -1,0 +1,4 @@
+baseURL = "https://amcpu.org/"
+languageCode = "en-us"
+title = "amcpu chronicle"
+theme = "hugo-vitae"
