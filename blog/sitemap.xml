@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://amcpu.org/posts/</loc>
+    <loc>http://amcpu.org/blog/</loc>
     <lastmod>2021-02-15T11:13:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://amcpu.org/posts/posts/</loc>
+    <loc>http://amcpu.org/blog/posts/</loc>
     <lastmod>2021-02-15T11:13:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://amcpu.org/posts/posts/new-blog/</loc>
+    <loc>http://amcpu.org/blog/posts/new-blog/</loc>
     <lastmod>2021-02-15T11:13:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://amcpu.org/posts/categories/</loc>
+    <loc>http://amcpu.org/blog/categories/</loc>
   </url>
   
   <url>
-    <loc>http://amcpu.org/posts/tags/</loc>
+    <loc>http://amcpu.org/blog/tags/</loc>
   </url>
   
 </urlset>

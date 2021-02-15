@@ -1,0 +1,4 @@
+baseURL = "http://amcpu.org/blog"
+languageCode = "en-us"
+title = "amcpu blog"
+theme = "hugo-vitae"

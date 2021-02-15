@@ -1,4 +1,0 @@
-baseURL = "http://amcpu.org/posts"
-languageCode = "en-us"
-title = "amcpu posts"
-theme = "hugo-vitae"
