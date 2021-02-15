@@ -3,20 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://amcpu.org/sites/</loc>
+    <loc>http://amcpu.org/chronicle/public/sites/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://amcpu.org/</loc>
+    <loc>http://amcpu.org/chronicle/public/</loc>
   </url>
   
   <url>
-    <loc>https://amcpu.org/categories/</loc>
+    <loc>http://amcpu.org/chronicle/public/categories/</loc>
   </url>
   
   <url>
-    <loc>https://amcpu.org/tags/</loc>
+    <loc>http://amcpu.org/chronicle/public/tags/</loc>
   </url>
   
 </urlset>
