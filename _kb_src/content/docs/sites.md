@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-02-16
+- [k8s] [prom] https://sysdig.com/blog/kubernetes-monitoring-prometheus/
+
 # 2021-02-14
 - [k8s] https://loft.sh/blog/kubernetes-liveness-probes-examples-common-pitfalls/index-1/
 - [sre] https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/
