@@ -2,6 +2,10 @@
 title: "Sites"
 draft: false
 ---
+# 2021-02-21
+- [linux] https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
+- [k8s] https://learnk8s.io/sidecar-containers-patterns
+
 # 2021-02-16
 - [k8s] [prom] https://sysdig.com/blog/kubernetes-monitoring-prometheus/
 
