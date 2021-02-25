@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-02-24
+- [jenkins] https://www.jvt.me/posts/2021/02/23/getting-started-jobdsl-standardised/
+
 # 2021-02-21
 - [linux] https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
 - [k8s] https://learnk8s.io/sidecar-containers-patterns
