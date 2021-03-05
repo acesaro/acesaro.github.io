@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-03-04
+- [postgresql] https://blog.arctype.com/postgres-notify-for-real-time-dashboards/
+
 # 2021-03-01
 - [assembly] https://wolchok.org/posts/how-to-read-assembly-language/
 - [http] https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/
