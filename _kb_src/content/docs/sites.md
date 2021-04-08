@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-04-07
+- [python] https://antonz.org/python-packaging/
+
 # 2021-03-15
 - [terraform] https://www.hashicorp.com/blog/testing-hashicorp-terraform
 
