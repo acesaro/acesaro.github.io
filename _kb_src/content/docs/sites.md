@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-05-11
+- [jenkins] https://plugins.jenkins.io/parameterized-scheduler
+
 # 2021-04-07
 - [python] https://antonz.org/python-packaging/
 
