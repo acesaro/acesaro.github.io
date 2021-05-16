@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-05-16
+- [k8s] https://www.infracloud.io/blogs/using-coredns-effectively-kubernetes/
+
 # 2021-05-11
 - [jenkins] https://plugins.jenkins.io/parameterized-scheduler
 - [terraform] https://github.com/cloudskiff/driftctl
