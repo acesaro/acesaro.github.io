@@ -6,14 +6,14 @@ draft: false
 
 * [vim] Convert line indention from 2 to 4 spaces
 
-    Convert two space indents to tabs
+    Convert two-space indents to tabs:
 
     ```
     :set ts=2 sts=2 noet
     :retab!
     ```
 
-    Convert two space indents to tabs
+    Convert tabs to four-space indents:
 
     ```
     :set ts=4 sts=4 et

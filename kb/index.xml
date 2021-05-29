@@ -22,8 +22,8 @@
       
       <guid>http://amcpu.org/kb/docs/til/</guid>
       <description>2021-05-29 #    [vim] Convert line indention from 2 to 4 spaces
-Convert two space indents to tabs
-:set ts=2 sts=2 noet :retab! Convert two space indents to tabs
+Convert two-space indents to tabs:
+:set ts=2 sts=2 noet :retab! Convert tabs to four-space indents:
 :set ts=4 sts=4 et :retab   2021-03-15 #    [python3] Merging two dictionaries in Python 3.x.
 $ python3 &amp;gt;&amp;gt;&amp;gt; xs = {&amp;quot;a&amp;quot;: 1, &amp;quot;b&amp;quot;: 2} &amp;gt;&amp;gt;&amp;gt; ys = {&amp;quot;a&amp;quot;: 9, &amp;quot;c&amp;quot;: 3} &amp;gt;&amp;gt;&amp;gt; z = {**xs, **ys} &amp;gt;&amp;gt;&amp;gt; z {&#39;a&#39;: 9, &#39;b&#39;: 2, &#39;c&#39;: 3}   2021-02-21 #    [nmap-ncat] Execute a command for any connections established to a listening port with the -e option for exec or -c for a command run with /bin/sh.</description>
     </item>
