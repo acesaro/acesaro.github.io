@@ -1,0 +1,4 @@
+baseURL = "http://amcpu.org/kb"
+languageCode = "en-us"
+title = "amcpu knowledge base"
+theme = "book"
