@@ -21,12 +21,17 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
-      - name: Build
-        run: hugo --minify kb_srcv
+      - name: Build kb
+        working-directory: ./_kb_src
+        run: hugo --minify -D -d ../kb
+        
+      - name: Build blog
+        working-directory: ./_blog_src
+        run: hugo --minify -D -d ../blog
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./kb
+          publish_dir: .
