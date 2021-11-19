@@ -4,6 +4,7 @@ draft: false
 ---
 # 2021-11-18
 - [vim] https://www.notonlycode.org/neovim-lua-config/
+- [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/
 
 # 2021-11-16
 - [prometheus] https://prometheus.io/blog/2021/11/16/agent/
