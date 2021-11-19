@@ -3,6 +3,7 @@ title: "Sites"
 draft: false
 ---
 # 2021-11-18
+- [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/
 - [vim] https://www.notonlycode.org/neovim-lua-config/
 - [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/
 
