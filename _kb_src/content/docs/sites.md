@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-11-21
+- [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html
+
 # 2021-11-18
 - [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/
 - [vim] https://www.notonlycode.org/neovim-lua-config/
