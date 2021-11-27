@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-11-26
+- [cs] https://teachyourselfcs.com/
+
 # 2021-11-21
 - [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html
 
