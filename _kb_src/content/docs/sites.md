@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2021-12-02
+- [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/
+
 # 2021-11-26
 - [cs] https://teachyourselfcs.com/
 
