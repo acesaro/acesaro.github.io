@@ -2,6 +2,25 @@
 title: "Today I Learned (TIL)"
 draft: false
 ---
+# 2021-12-02
+
+* [shell] Using `envsubst` to template files in shell with GNU gettext utils.
+
+    Create a template file with variables using the similar shell syntax:
+    ```
+    $ vi tmp.tmpl
+    my_config_key_1="${MY_CONFIG_KEY_1}"
+    my_config_key_2="${MY_CONFIG_KEY_2}"
+    ```
+
+    Render the template with `envsubst`:
+    ```
+    $ export MY_CONFIG_KEY_1=tony MY_CONFIG_KEY_2=cesaro
+    $ envsubst < tmp.tmpl
+    my_config_key_1="tony"
+    my_config_key_2="cesaro"
+    ```
+
 # 2021-05-29
 
 * [vim] Convert line indention from 2 to 4 spaces
