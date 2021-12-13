@@ -2,6 +2,14 @@
 title: "Today I Learned (TIL)"
 draft: false
 ---
+# 2021-12-13
+
+* [k8s] Deleting "stuck" resources that reference finalizers.  After applying this
+  you should be able to delete the objects, or those that depend on this one.
+    ```
+    $ kubectl patch {kind}/{name} -p '{"metadata":{"finalizers":[]}}' --type=merge
+    ```
+
 # 2021-12-02
 
 * [shell] Using `envsubst` to template files in shell with GNU gettext utils.

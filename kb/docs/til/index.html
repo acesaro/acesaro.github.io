@@ -1,28 +1,22 @@
 <!doctype html><html lang=en dir=ltr>
 <head>
-<meta name=generator content="Hugo 0.89.4">
+<meta name=generator content="Hugo 0.90.1">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
+<meta name=description content="2021-12-13 #   [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one. $ kubectl patch {kind}/{name} -p '{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}' --type=merge   2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
 Create a template file with variables using the similar shell syntax:
-$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:
-$ export MY_CONFIG_KEY_1=tony MY_CONFIG_KEY_2=cesaro $ envsubst < tmp.tmpl my_config_key_1=&#34;tony&#34; my_config_key_2=&#34;cesaro&#34;   2021-05-29 #    [vim] Convert line indention from 2 to 4 spaces
-Convert two-space indents to tabs:
-:set ts=2 sts=2 noet :retab!">
+$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:">
 <meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Today I Learned (TIL)">
-<meta property="og:description" content="2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
+<meta property="og:description" content="2021-12-13 #   [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one. $ kubectl patch {kind}/{name} -p '{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}' --type=merge   2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
 Create a template file with variables using the similar shell syntax:
-$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:
-$ export MY_CONFIG_KEY_1=tony MY_CONFIG_KEY_2=cesaro $ envsubst < tmp.tmpl my_config_key_1=&#34;tony&#34; my_config_key_2=&#34;cesaro&#34;   2021-05-29 #    [vim] Convert line indention from 2 to 4 spaces
-Convert two-space indents to tabs:
-:set ts=2 sts=2 noet :retab!">
+$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://amcpu.org/kb/docs/til/"><meta property="article:section" content="docs">
 <title>Today I Learned (TIL) | amcpu knowledge base</title>
 <link rel=manifest href=/kb/manifest.json>
 <link rel=icon href=/kb/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/kb/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css integrity="sha256-bHxkRt/e58jJM+m7xugO4+1skTsqWVGfIJLDxqnWPlU=">
-<script defer src=/kb/en.search.min.9a934c4f4826e323b85398690cd8b7769b765f600931e7db2ba3e099646b01a2.js integrity="sha256-mpNMT0gm4yO4U5hpDNi3dpt2X2AJMefbK6PgmWRrAaI="></script>
+<script defer src=/kb/en.search.min.599fa224602ee8999286691d1cd3aa81ca35bc992237ee10ec66507f8d1ed5ce.js integrity="sha256-WZ+iJGAu6JmShmkdHNOqgco1vJkiN+4Q7GZQf40e1c4="></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -67,7 +61,17 @@ Convert two-space indents to tabs:
 <nav id=TableOfContents></nav>
 </aside>
 </header>
-<article class=markdown><h1 id=2021-12-02>
+<article class=markdown><h1 id=2021-12-13>
+2021-12-13
+<a class=anchor href=#2021-12-13>#</a>
+</h1>
+<ul>
+<li>[k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this
+you should be able to delete the objects, or those that depend on this one.
+<pre tabindex=0><code>$ kubectl patch {kind}/{name} -p '{&quot;metadata&quot;:{&quot;finalizers&quot;:[]}}' --type=merge
+</code></pre></li>
+</ul>
+<h1 id=2021-12-02>
 2021-12-02
 <a class=anchor href=#2021-12-02>#</a>
 </h1>
