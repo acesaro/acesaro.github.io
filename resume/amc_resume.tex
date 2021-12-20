@@ -1,0 +1,198 @@
+% Tony Cesaro Resume - LaTeX
+% Created: 2005-03-05
+% Last Modified: 2015-11-04
+
+\documentclass[10pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=0.25in,bmargin=0.25in,lmargin=0.25in,rmargin=0.25in,headheight=0in,headsep=0in,footskip=.1in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Anthony Cesaro}
+\newcommand{\email}{acesaro@gmail.com}
+\newcommand{\phone}{321-356-4650}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+  \begin{flushleft}\selectfont\Large\scshape#1\end{flushleft}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+  \vspace{4pt}
+  \textbf{\selectfont\normalsize#1}
+  \begin{itemize}
+  \vspace{3pt}
+}{
+  \end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+  \vspace{-4pt}
+  \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+  \vspace{-1pt}
+  \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+  \vspace{-5pt}
+  \item
+  \textbf{#1} - #2 \\
+  \textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+  \resbigitem{#1}{#2}{#3}
+  \vspace{-2pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+  \resitem{\textbf{#1}}
+  \vspace{-5pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-4pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \hfill phone: \phone | e-mail: \email}
+
+\vspace{8 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Summary}
+
+  \resitem{A distributed systems and Internet services engineer working to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction.  I focus my efforts in distributed computer systems/architecture, configuration management, optimization, security and operational automation.  I have a passion for lifelong learning and a strong interest in emerging technologies and their application to business success.}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Technical Experience}
+
+  \resitem{\textbf{Operating Systems, Virtualization \& Automation:} Linux (RHEL/CentOS, Debian/Ubuntu, Gentoo): Advanced, Solaris 9/10 (SPARC \& x86): Advanced, Free/Net/OpenBSD: Intermediate; VirtualBox: Intermediate, Vagrant: Intermediate, AWS EC2/CloudFormation: Advanced; Cobbler/Kickstart: Intermediate, Ansible: Advanced, Puppet: Intermediate, SaltStack: Intermediate}
+
+  \resitem{\textbf{Database:} SQL: Intermediate, MySQL: Intermediate, Oracle 9i/10g/11g: Intermediate, PostgreSQL: Intermediate, SQLite: Intermediate, Elasticsearch: Intermediate, AWS RDS: Intermediate}
+
+  \resitem{\textbf{Scripting/Programming/Source Control:} Shell (bash/sed/awk/grep/etc.): Advanced, Python: Intermediate, Perl: Intermediate, PHP: Intermediate, Lua: Intermediate, Java: Intermediate, C: Intermediate, C++: Novice, HTML: Advanced, CSS: Intermediate, Javascript: Intermediate, Clojure: Novice, Go: Novice, \LaTeX: Intermediate, gcc/gdb: Intermediate, Perforce: Advanced, Subversion: Intermediate, git: Intermediate, mercurial: Novice, MS Visual Studio: Novice}
+
+  \resitem{\textbf{Monitoring Tools:} Graphite: Advanced, InfluxDB: Intermediate, Bosun: Intermediate, Riemann: Intermediate, ZABBIX: Advanced, Splunk>: Advanced, Heka: Advanced, Logstash: Advanced, Kibana/Grafana: Advanced}
+
+  \resitem{\textbf{Network Services:} Apache httpd: Advanced, nginx: Intermediate, Apache Tomcat: Intermediate, Samba (SMB/CIFS): Advanced, NFS: Intermediate, LDAP: Advanced, SMTP (Sendmail/Postfix): Intermediate, Syslog-NG: Advanced, DNS (BIND, djbdns): Advanced, OpenSSH: Advanced, FTP: Intermediate, NNTP: Novice}
+
+  \resitem{\textbf{Computer Networking:} Configuration of TCP/IP stack on UNIX \& Windows systems, IP Subnetting/Supernetting, Competency of OSI model and TCP/IP stack, VLANs, DHCP, BGP anycast, Cisco/Brocade switches and load balancers: Novice, Linux iptables: Intermediate, Linux TCP tuning: Intermediate}
+
+  \resitem{\textbf{Hardware (Installation \& Maintenance):} Oracle/Sun Enterprise class SPARC \& x86\_64 servers, Commodity x86\_64 based servers; \textbf{Storage}: Oracle/Sun direct attached fibre channel disk arrays, VxVM \& ZFS administration, Linux mdadm/LVM}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Professional Experience}
+
+  \begin{ressubsec}{Electronic Arts, Madden NFL/Madden NFL Mobile series}{Orlando, FL}{Senior Systems Engineer: July 2012 - Present}
+
+    \ressubitem{\textbf{Role:} Systems engineer leading online gaming systems operations and designing next generation online gaming infrastructures supporting the Madden and NCAA Football titles for all current gaming platforms.}
+
+    \ressubitem{\textbf{Description:} Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.}
+
+    \ressubitem{\textbf{Key Milestones:} Successful launch of 5 game titles including Madden NFL 13/25/15, Madden NFL Mobile and NCAA Football 14; Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Logsearch, Heka, Elasticsearch, Kibana, Grafana, Graphite, Riemann and Bosun; Design and implementation of automated operations procedures such as software builds, deployments and stress testing utilizing Ansible and custom Python software.  Migration of Madden Mobile server infrastructure from a physical to cloud hosting environment, including migration of customer data and greatly improved scalability.}
+
+    \ressubitem{\textbf{Awards:} 2015 Tiburon Sharkie award nomination in The Innovator category.}
+
+  \end{ressubsec}
+
+  \begin{ressubsec}{Highwinds Network Group, CDN Operations}{Winter Park, FL}{Systems Engineer: July 2011 - July 2012}
+
+    \ressubitem{\textbf{Role:} Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.}
+
+    \ressubitem{\textbf{Description:} Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents.  This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.  Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.  Automation of commonly performed and complex tasks using bash, Perl and Python scripting. Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl.}
+
+    \ressubitem{\textbf{Key Milestones:} Design, configuration and implementation of a redundant and distributed ZABBIX-based network monitoring system, including JIRA ticketing integration and replicated/partitioned PostgreSQL database backend; Consolidation of six LDAP trees with redundant user accounts to a single tree utilizing attributes for access control and authorization and replication with OpenLDAP/SyncRepl; Operating system migration of over 300 physical servers from Gentoo Linux to CentOS 6.0 utilizing Cobbler for Kickstart/DHCP standardization, while live production traffic continued to serve from the POPs; Rebuilt core storage servers (Sun Fire X4500/4540) while maintaining ZFS zpools through reimport and validation.}
+
+    \ressubitem{\textbf{Awards:} Employee of the year nomination during first year of service.}
+
+  \end{ressubsec}
+
+  \begin{ressubsec}{CenturyLink Corporation, Network Systems Management}{Winter Park, FL}{IS Technical Team Lead: March 2006 - July 2011}
+
+    \ressubitem{\textbf{Role:} Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems.}
+
+    \ressubitem{\textbf{Description:} Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems.  Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.}
+
+    \ressubitem{\textbf{Key Milestones:} Implementation of enterprise class LDAP infrastructure for a heterogeneous UNIX/Windows environment; Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy; Installation and configuration of a Zabbix monitoring system for all systems' surveillance; Development of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information; Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users; Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink.}
+
+    \ressubitem{\textbf{Awards:} 2010 Outstanding Service Provider recipient; 15 "Acclaim" awards and thank-you's received for excellence in assigned tasks and exceeding expectations in customer service; Recognized and rewarded as a key resource in the initial systems integration and conversion activities for the CenturyTel/EMBARQ merger.}
+
+  \end{ressubsec}
+
+  \begin{ressubsec}{Siemens Power Generation, Global Enterprise Architecture}{Orlando, FL}{IT Architect: January 2004 - March 2006}
+
+    \ressubitem{\textbf{Description:} Gathered requirements from business personnel for various problems and inefficiencies and researched and compared products to fill requests from the business for various tools and solutions. Utilized OPNET ITGuru to capture application traces on the network and performed analysis within the tool to help alleviate poor response times in enterprise applications; Installation, testing, and administration of applications such as Borland Caliber RM, OPNET ITGuru and ITSentinel, Saphir, SAP XI.}
+
+  \end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Education}
+
+  \begin{ressubsec}{University of Central Florida}{Orlando, FL}{Master of Science - Management Information Systems}
+
+    \ressubitem{\textbf{Relevant coursework:} ERP Implementation, Telecommunication Management, Business Intelligence Systems, Systems Analysis \& Design, IT Project Management, Information Resource Management}
+
+    \ressubitem{\textbf{Graduated:} Fall 2008}
+
+  \end{ressubsec}
+
+  \begin{ressubsec}{University of Central Florida}{Orlando, FL}{Bachelor of Science - Information Technology}
+
+    \ressubitem{\textbf{Relevant coursework:} Network Lab, Database Systems, Web Systems, Wide Area Networks, Computer Science, C Programming, Computer Architectures, Distributed Systems Programming, Network Security, Information Theory}
+
+    \ressubitem{\textbf{Graduated:} Spring 2005}
+
+  \end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

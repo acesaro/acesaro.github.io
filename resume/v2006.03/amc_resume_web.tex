@@ -1,0 +1,191 @@
+% Resume Template - LaTeX
+% Created: March 5, 2005
+% Last Modified: May 15, 2005
+
+\documentclass[10pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=0.25in,bmargin=0.25in,lmargin=0.25in,rmargin=0.25in,headheight=0in,headsep=0in,footskip=.1in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Anthony Cesaro}
+\newcommand{\addr}{4705 Lucier Ct. \#3, Winter Park, FL 32792}
+\newcommand{\phone}{321-230-0297}
+\newcommand{\email}{acesaro@gmail.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{flushleft}\selectfont\Large\scshape#1\end{flushleft}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	\textbf{\selectfont\normalsize#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1} - #2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+%\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill phone: \phone | e-mail: \email}
+
+\vspace{8 pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Objective}
+
+	\resitem{To obtain a position in the field of Information Technology with focus in infrastructure and information systems planning, configuration and maintenance.}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Skills}
+
+	\resitem{\textbf{Operating Systems:} Linux 2.4.x/2.6.x(Debian, Gentoo, Red Hat, SuSE), Solaris 8/9/10, FreeBSD, NetBSD, OpenBSD, Windows 95 through XP Professional, Windows Server 2003, AIX}
+	
+	\resitem{\textbf{Languages:} Java:J2SE 1.4+, J2EE(JSP/Servlets), C, C++, SQL, XHTML, PHP, ASP.NET, CSS, BASH Scripting, Python, \LaTeX}
+
+	\resitem{\textbf{Networking Services:} FTP, SSH/Telnet, Apache 1.3.x/2.0.x, Apache Jakarta Tomcat, Zope, Web Design, Samba(SMB/CIFS), NFS, LDAP, Kerberos, DHCP,  various MTAs, firewall configuration, VNC, Web Services}
+
+	\resitem{\textbf{Computer Networking:} Configuration of TCP/IP on client/server machines (Unix\&Windows), IP Subnetting/Supernetting, Full competency of OSI model, IP addressing, MAC addressing, VLANs, DHCP, VPN, Cisco IOS, Zebra/Quagga routing software, OSPF/RIP/EIGRP configuration}
+
+	\resitem{\textbf{Productivity Software:} MS Office Suite, OpenOffice.org, MS Visio, MS Project, Adobe Photoshop, Acrobat, Illustrator, GIMP}
+
+	\resitem{\textbf{Database:} MySQL, Oracle 9i/10g, MS SQL Server, E/R Diagrams, UML, Normalization, SQL}
+
+	\resitem{\textbf{Certification:} CCNA pending June 2005, OPNET ITGuru QuickStart Certificate}
+	
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Education}
+
+	\begin{ressubsec}{University of Central Florida}{Orlando, FL}{Master of Science - Management of Information Systems}
+		\ressubitem{Relevant coursework (planned): ERP Implementation, Telecommunication Management, BI Systems, Change Management, Systems Analysis \& Design}
+		\ressubitem{Expected graduation: December, 2006}
+	\end{ressubsec}
+
+	\begin{ressubsec}{University of Central Florida}{Orlando, FL}{Bachelor of Science - Information Technology}
+		\ressubitem{Concentration: Computer Networking and System Administration}
+		\ressubitem{Relevant coursework: Network Lab, Database Systems, Web Systems I\&II, Wide Area Networks I\&II, Computer Science I\&II, C Programming, Computer Architectures, Distributed Systems Programming, Network Security, }
+		\ressubitem{Completed: May, 2005}
+	\end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Experience}
+
+	\begin{ressubsec}{Siemens Power Generation, Global Enterprise Architecture}{Orlando, FL}{Infrastructure Architect: January 2004-present}
+		\ressubitem{Gathered requirements from business personnel for various problems and inefficiencies and researched and compared products to fill requests from the business for various tools and solutions}
+		\ressubitem{Participated in forecasting and planning of IT projects and derived strategies for technology related projects}
+		\ressubitem{Assumed the role of infrastructure architect in numerous PoC and pilot projects with the business including BAM systems, shop floor scheduling, migration of systems to remote outsourced location, SAP Enterprise Portal, and extranet architecture}
+		\ressubitem{Utilized OPNET ITGuru to capture application traces on the network and performed analysis within the tool to help alleviate poor response times in enterprise applications}
+		\ressubitem{Installation and administration of applications such as Borland Caliber RM, OPNET ITGuru and ITSentinel, Saphir, SAP Netweaver}
+	\end{ressubsec}
+
+	\begin{ressubsec}{UCF Student Government Association - Knightcast Radio Station}{Orlando, FL}{Technical Director: May 2005-present}
+		\ressubitem{Administration of station computer network, MS Windows workstations and Linux servers, audio equipment, Shoutcast internet radio daemon}
+		\ressubitem{On call assistance of radio show participants and DJs, and officer duties and needs}
+		\ressubitem{Creation and maintenance of station website (PHP/mySQL/apache technology)}
+	\end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Projects \& Activities}
+
+	\resitem{Volunteered technical knowledge to the Knightcast online radio station at UCF to rebuild their website, install and configure a new file server, and install a directory services solution for the network using OpenLDAP and Kerberos.}
+	\resitem{Built numerous web sites for friends and family members using server-side scripting platforms such as PHP, ASP, and JSP and used persistent databases such as MySQL, Oracle 9i, and MS SQL Server 2000.}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{ressection}{Clubs \& Organizations}
+
+	\resitem{Secretary - Association of IT Professionals - UCF Student Chapter}
+	\resitem{Member - Linux Users Group at UCF}
+	\resitem{Member - ACM UCF Chapter}
+	\resitem{Technical Director - Knightcast Online Radio Station - UCF}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
