@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2022-02-02
+- [git] https://developer.ibm.com/tutorials/d-learn-workings-git
+
 # 2021-12-02
 - [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/
 
