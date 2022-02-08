@@ -3,20 +3,18 @@
 <meta name=generator content="Hugo 0.92.1">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="2021-12-13 #   [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one. $ kubectl patch {kind}/{name} -p '{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}' --type=merge   2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
-Create a template file with variables using the similar shell syntax:
-$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:">
+<meta name=description content="2022-02-08 #    [vim] Updating an environment variable in a currently running vim session.
+# In the original shell after SSHing in $ env |grep SSH | sed 's/^/export /g' export SSH_AUTH_SOCK=/tmp/ssh-abcdefg/agent.2268696 # In the existing vim session running in a tmux session :let $SSH_AUTH_SOCK = '/tmp/ssh-abcdefg/agent.2268696'   2021-12-13 #    [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one.">
 <meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Today I Learned (TIL)">
-<meta property="og:description" content="2021-12-13 #   [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one. $ kubectl patch {kind}/{name} -p '{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}' --type=merge   2021-12-02 #    [shell] Using envsubst to template files in shell with GNU gettext utils.
-Create a template file with variables using the similar shell syntax:
-$ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;${MY_CONFIG_KEY_2}&#34; Render the template with envsubst:">
+<meta property="og:description" content="2022-02-08 #    [vim] Updating an environment variable in a currently running vim session.
+# In the original shell after SSHing in $ env |grep SSH | sed 's/^/export /g' export SSH_AUTH_SOCK=/tmp/ssh-abcdefg/agent.2268696 # In the existing vim session running in a tmux session :let $SSH_AUTH_SOCK = '/tmp/ssh-abcdefg/agent.2268696'   2021-12-13 #    [k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this you should be able to delete the objects, or those that depend on this one.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://amcpu.org/kb/docs/til/"><meta property="article:section" content="docs">
 <title>Today I Learned (TIL) | amcpu knowledge base</title>
 <link rel=manifest href=/kb/manifest.json>
 <link rel=icon href=/kb/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/kb/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css integrity="sha256-bHxkRt/e58jJM+m7xugO4+1skTsqWVGfIJLDxqnWPlU=">
-<script defer src=/kb/en.search.min.6577b4d6cc7c65f02ca4e67b02a77dca8ee3f8e19e2384e9506893ce862b46ca.js integrity="sha256-ZXe01sx8ZfAspOZ7Aqd9yo7j+OGeI4TpUGiTzoYrRso="></script>
+<script defer src=/kb/en.search.min.6c0460e2d0f3049dded31f14efe81515c595df2f153a9988fa898ad903e0823c.js integrity="sha256-bARg4tDzBJ3e0x8U7+gVFcWV3y8VOpmI+omK2QPggjw="></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -61,13 +59,29 @@ $ vi tmp.tmpl my_config_key_1=&#34;${MY_CONFIG_KEY_1}&#34; my_config_key_2=&#34;
 <nav id=TableOfContents></nav>
 </aside>
 </header>
-<article class=markdown><h1 id=2021-12-13>
+<article class=markdown><h1 id=2022-02-08>
+2022-02-08
+<a class=anchor href=#2022-02-08>#</a>
+</h1>
+<ul>
+<li>
+<p>[vim] Updating an environment variable in a currently running vim session.</p>
+<pre tabindex=0><code># In the original shell after SSHing in
+$ env |grep SSH | sed 's/^/export /g'
+export SSH_AUTH_SOCK=/tmp/ssh-abcdefg/agent.2268696
+
+# In the existing vim session running in a tmux session
+:let $SSH_AUTH_SOCK = '/tmp/ssh-abcdefg/agent.2268696'
+</code></pre></li>
+</ul>
+<h1 id=2021-12-13>
 2021-12-13
 <a class=anchor href=#2021-12-13>#</a>
 </h1>
 <ul>
-<li>[k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this
-you should be able to delete the objects, or those that depend on this one.
+<li>
+<p>[k8s] Deleting &ldquo;stuck&rdquo; resources that reference finalizers. After applying this
+you should be able to delete the objects, or those that depend on this one.</p>
 <pre tabindex=0><code>$ kubectl patch {kind}/{name} -p '{&quot;metadata&quot;:{&quot;finalizers&quot;:[]}}' --type=merge
 </code></pre></li>
 </ul>
