@@ -2,10 +2,24 @@
 title: "Today I Learned (TIL)"
 draft: false
 ---
+# 2022-02-08
+
+* [vim] Updating an environment variable in a currently running vim session.
+
+    ```
+    # In the original shell after SSHing in
+    $ env |grep SSH | sed 's/^/export /g'
+    export SSH_AUTH_SOCK=/tmp/ssh-abcdefg/agent.2268696
+    
+    # In the existing vim session running in a tmux session
+    :let $SSH_AUTH_SOCK = '/tmp/ssh-abcdefg/agent.2268696'
+    ```
+
 # 2021-12-13
 
 * [k8s] Deleting "stuck" resources that reference finalizers.  After applying this
   you should be able to delete the objects, or those that depend on this one.
+  
     ```
     $ kubectl patch {kind}/{name} -p '{"metadata":{"finalizers":[]}}' --type=merge
     ```
