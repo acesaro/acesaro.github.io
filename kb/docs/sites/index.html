@@ -1,234 +1,25 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta name=generator content="Hugo 0.92.2">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="2022-02-27 #   [prometheus] https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a  2022-02-06 #   [cloud] https://docs.gruntwork.io/docs/guides/production-framework/  2022-02-02 #   [git] https://developer.ibm.com/tutorials/d-learn-workings-git  2021-12-02 #   [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/  2021-11-26 #   [cs] https://teachyourselfcs.com/  2021-11-21 #   [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html  2021-11-18 #   [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/ [vim] https://www.notonlycode.org/neovim-lua-config/ [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/  2021-11-16 #   [prometheus] https://prometheus.io/blog/2021/11/16/agent/  2021-05-20 #   [http] https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/  2021-05-16 #   [k8s] https://www.">
-<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Sites">
-<meta property="og:description" content="2022-02-27 #   [prometheus] https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a  2022-02-06 #   [cloud] https://docs.gruntwork.io/docs/guides/production-framework/  2022-02-02 #   [git] https://developer.ibm.com/tutorials/d-learn-workings-git  2021-12-02 #   [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/  2021-11-26 #   [cs] https://teachyourselfcs.com/  2021-11-21 #   [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html  2021-11-18 #   [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/ [vim] https://www.notonlycode.org/neovim-lua-config/ [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/  2021-11-16 #   [prometheus] https://prometheus.io/blog/2021/11/16/agent/  2021-05-20 #   [http] https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/  2021-05-16 #   [k8s] https://www.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://amcpu.org/kb/docs/sites/"><meta property="article:section" content="docs">
-<title>Sites | amcpu knowledge base</title>
-<link rel=manifest href=/kb/manifest.json>
-<link rel=icon href=/kb/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/kb/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css integrity="sha256-bHxkRt/e58jJM+m7xugO4+1skTsqWVGfIJLDxqnWPlU=">
-<script defer src=/kb/en.search.min.a67c326df5530571b6b9e52521ddd68f5339d0341a98ce6a8efcce4ecf3c8a8d.js integrity="sha256-pnwybfVTBXG2ueUlId3Wj1M50DQamM5qjvzOTs88io0="></script>
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a href=/kb><span>amcpu knowledge base</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
-<li>
-<a href=http://amcpu.org/kb/docs/sites/ class=active>Sites</a>
-</li>
-<li>
-<a href=http://amcpu.org/kb/docs/til/>Today I Learned (TIL)</a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/kb/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.94.2"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="2022-03-15 #   [swe] https://austinhenley.com/blog/sestudyguide.html  2022-02-27 #   [prometheus] https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a  2022-02-06 #   [cloud] https://docs.gruntwork.io/docs/guides/production-framework/  2022-02-02 #   [git] https://developer.ibm.com/tutorials/d-learn-workings-git  2021-12-02 #   [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/  2021-11-26 #   [cs] https://teachyourselfcs.com/  2021-11-21 #   [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html  2021-11-18 #   [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/ [vim] https://www.notonlycode.org/neovim-lua-config/ [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/  2021-11-16 #   [prometheus] https://prometheus.io/blog/2021/11/16/agent/  2021-05-20 #   [http] https://talawah."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Sites"><meta property="og:description" content="2022-03-15 #   [swe] https://austinhenley.com/blog/sestudyguide.html  2022-02-27 #   [prometheus] https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a  2022-02-06 #   [cloud] https://docs.gruntwork.io/docs/guides/production-framework/  2022-02-02 #   [git] https://developer.ibm.com/tutorials/d-learn-workings-git  2021-12-02 #   [docker] http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/  2021-11-26 #   [cs] https://teachyourselfcs.com/  2021-11-21 #   [dev] https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html  2021-11-18 #   [software] https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/ [vim] https://www.notonlycode.org/neovim-lua-config/ [sre] https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/  2021-11-16 #   [prometheus] https://prometheus.io/blog/2021/11/16/agent/  2021-05-20 #   [http] https://talawah."><meta property="og:type" content="article"><meta property="og:url" content="http://amcpu.org/kb/docs/sites/"><meta property="article:section" content="docs"><title>Sites | amcpu knowledge base</title><link rel=manifest href=/kb/manifest.json><link rel=icon href=/kb/favicon.png type=image/x-icon><link rel=stylesheet href=/kb/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css integrity="sha256-bHxkRt/e58jJM+m7xugO4+1skTsqWVGfIJLDxqnWPlU="><script defer src=/kb/en.search.min.f586d95c5c9c6ef7a2ea13e9029ec79e75cfca6333de6b2938f6697dc94f9652.js integrity="sha256-9YbZXFycbvei6hPpAp7HnnXPymMz3mspOPZpfclPllI="></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/kb><span>amcpu knowledge base</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=http://amcpu.org/kb/docs/sites/ class=active>Sites</a></li><li><a href=http://amcpu.org/kb/docs/til/>Today I Learned (TIL)</a></li></ul></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/kb/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Sites</strong>
-<label for=toc-control>
-<img src=/kb/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
-</aside>
-</header>
-<article class=markdown><h1 id=2022-02-27>
-2022-02-27
-<a class=anchor href=#2022-02-27>#</a>
-</h1>
-<ul>
-<li>[prometheus] <a href=https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a>https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a</a></li>
-</ul>
-<h1 id=2022-02-06>
-2022-02-06
-<a class=anchor href=#2022-02-06>#</a>
-</h1>
-<ul>
-<li>[cloud] <a href=https://docs.gruntwork.io/docs/guides/production-framework/>https://docs.gruntwork.io/docs/guides/production-framework/</a></li>
-</ul>
-<h1 id=2022-02-02>
-2022-02-02
-<a class=anchor href=#2022-02-02>#</a>
-</h1>
-<ul>
-<li>[git] <a href=https://developer.ibm.com/tutorials/d-learn-workings-git>https://developer.ibm.com/tutorials/d-learn-workings-git</a></li>
-</ul>
-<h1 id=2021-12-02>
-2021-12-02
-<a class=anchor href=#2021-12-02>#</a>
-</h1>
-<ul>
-<li>[docker] <a href=http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/>http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/</a></li>
-</ul>
-<h1 id=2021-11-26>
-2021-11-26
-<a class=anchor href=#2021-11-26>#</a>
-</h1>
-<ul>
-<li>[cs] <a href=https://teachyourselfcs.com/>https://teachyourselfcs.com/</a></li>
-</ul>
-<h1 id=2021-11-21>
-2021-11-21
-<a class=anchor href=#2021-11-21>#</a>
-</h1>
-<ul>
-<li>[dev] <a href=https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html>https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html</a></li>
-</ul>
-<h1 id=2021-11-18>
-2021-11-18
-<a class=anchor href=#2021-11-18>#</a>
-</h1>
-<ul>
-<li>[software] <a href=https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/>https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/</a></li>
-<li>[vim] <a href=https://www.notonlycode.org/neovim-lua-config/>https://www.notonlycode.org/neovim-lua-config/</a></li>
-<li>[sre] <a href=https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/>https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/</a></li>
-</ul>
-<h1 id=2021-11-16>
-2021-11-16
-<a class=anchor href=#2021-11-16>#</a>
-</h1>
-<ul>
-<li>[prometheus] <a href=https://prometheus.io/blog/2021/11/16/agent/>https://prometheus.io/blog/2021/11/16/agent/</a></li>
-</ul>
-<h1 id=2021-05-20>
-2021-05-20
-<a class=anchor href=#2021-05-20>#</a>
-</h1>
-<ul>
-<li>[http] <a href=https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/>https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/</a></li>
-</ul>
-<h1 id=2021-05-16>
-2021-05-16
-<a class=anchor href=#2021-05-16>#</a>
-</h1>
-<ul>
-<li>[k8s] <a href=https://www.infracloud.io/blogs/using-coredns-effectively-kubernetes/>https://www.infracloud.io/blogs/using-coredns-effectively-kubernetes/</a></li>
-</ul>
-<h1 id=2021-05-11>
-2021-05-11
-<a class=anchor href=#2021-05-11>#</a>
-</h1>
-<ul>
-<li>[jenkins] <a href=https://plugins.jenkins.io/parameterized-scheduler>https://plugins.jenkins.io/parameterized-scheduler</a></li>
-<li>[terraform] <a href=https://github.com/cloudskiff/driftctl>https://github.com/cloudskiff/driftctl</a></li>
-</ul>
-<h1 id=2021-04-07>
-2021-04-07
-<a class=anchor href=#2021-04-07>#</a>
-</h1>
-<ul>
-<li>[python] <a href=https://antonz.org/python-packaging/>https://antonz.org/python-packaging/</a></li>
-</ul>
-<h1 id=2021-03-15>
-2021-03-15
-<a class=anchor href=#2021-03-15>#</a>
-</h1>
-<ul>
-<li>[terraform] <a href=https://www.hashicorp.com/blog/testing-hashicorp-terraform>https://www.hashicorp.com/blog/testing-hashicorp-terraform</a></li>
-</ul>
-<h1 id=2021-03-13>
-2021-03-13
-<a class=anchor href=#2021-03-13>#</a>
-</h1>
-<ul>
-<li>[security] <a href=https://cheatsheetseries.owasp.org/index.html>https://cheatsheetseries.owasp.org/index.html</a></li>
-</ul>
-<h1 id=2021-03-04>
-2021-03-04
-<a class=anchor href=#2021-03-04>#</a>
-</h1>
-<ul>
-<li>[postgresql] <a href=https://blog.arctype.com/postgres-notify-for-real-time-dashboards/>https://blog.arctype.com/postgres-notify-for-real-time-dashboards/</a></li>
-</ul>
-<h1 id=2021-03-01>
-2021-03-01
-<a class=anchor href=#2021-03-01>#</a>
-</h1>
-<ul>
-<li>[assembly] <a href=https://wolchok.org/posts/how-to-read-assembly-language/>https://wolchok.org/posts/how-to-read-assembly-language/</a></li>
-<li>[http] <a href=https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/>https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/</a></li>
-<li>[k8s] <a href=https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3>https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3</a></li>
-</ul>
-<h1 id=2021-02-24>
-2021-02-24
-<a class=anchor href=#2021-02-24>#</a>
-</h1>
-<ul>
-<li>[jenkins] <a href=https://www.jvt.me/posts/2021/02/23/getting-started-jobdsl-standardised/>https://www.jvt.me/posts/2021/02/23/getting-started-jobdsl-standardised/</a></li>
-</ul>
-<h1 id=2021-02-21>
-2021-02-21
-<a class=anchor href=#2021-02-21>#</a>
-</h1>
-<ul>
-<li>[linux] <a href=https://jvns.ca/blog/2016/10/10/what-even-is-a-container/>https://jvns.ca/blog/2016/10/10/what-even-is-a-container/</a></li>
-<li>[k8s] <a href=https://learnk8s.io/sidecar-containers-patterns>https://learnk8s.io/sidecar-containers-patterns</a></li>
-<li>[python] <a href=https://farid.berkeley.edu/downloads/tutorials/learnPython/>https://farid.berkeley.edu/downloads/tutorials/learnPython/</a></li>
-</ul>
-<h1 id=2021-02-16>
-2021-02-16
-<a class=anchor href=#2021-02-16>#</a>
-</h1>
-<ul>
-<li>[k8s] [prom] <a href=https://sysdig.com/blog/kubernetes-monitoring-prometheus/>https://sysdig.com/blog/kubernetes-monitoring-prometheus/</a></li>
-</ul>
-<h1 id=2021-02-14>
-2021-02-14
-<a class=anchor href=#2021-02-14>#</a>
-</h1>
-<ul>
-<li>[k8s] <a href=https://loft.sh/blog/kubernetes-liveness-probes-examples-common-pitfalls/index-1/>https://loft.sh/blog/kubernetes-liveness-probes-examples-common-pitfalls/index-1/</a></li>
-<li>[sre] <a href=https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/>https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/</a></li>
-<li>[cks] <a href=https://gumroad.com/l/cksbook>https://gumroad.com/l/cksbook</a></li>
-<li>[py] <a href=https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/>https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/</a></li>
-<li>[sre] <a href=https://linkedin.github.io/school-of-sre/>https://linkedin.github.io/school-of-sre/</a></li>
-<li>[outage] <a href=https://slack.engineering/slacks-outage-on-january-4th-2021/>https://slack.engineering/slacks-outage-on-january-4th-2021/</a></li>
-<li>[k8s] [sec] <a href=https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation>https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation</a></li>
-<li>[tf] <a href=https://medium.com/last9/infrastructure-as-code-as-software-a5e4b2b93e8e>https://medium.com/last9/infrastructure-as-code-as-software-a5e4b2b93e8e</a></li>
-<li>[linux] <a href=https://www.redhat.com/sysadmin/cgroups-part-one>https://www.redhat.com/sysadmin/cgroups-part-one</a></li>
-<li>[py] <a href=https://www.sanjaysiddhanti.com/2020/04/08/s3testing/>https://www.sanjaysiddhanti.com/2020/04/08/s3testing/</a></li>
-<li>[linux] <a href=https://blog.stackpath.com/bpf-hook-points-part-1/>https://blog.stackpath.com/bpf-hook-points-part-1/</a></li>
-<li>[docs] <a href=https://developers.google.com/tech-writing/overview>https://developers.google.com/tech-writing/overview</a></li>
-</ul>
-</article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-</div>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents></nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<label for=toc-control><img src=/kb/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class=markdown><h1 id=2022-03-15>2022-03-15
+<a class=anchor href=#2022-03-15>#</a></h1><ul><li>[swe] <a href=https://austinhenley.com/blog/sestudyguide.html>https://austinhenley.com/blog/sestudyguide.html</a></li></ul><h1 id=2022-02-27>2022-02-27
+<a class=anchor href=#2022-02-27>#</a></h1><ul><li>[prometheus] <a href=https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a>https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a</a></li></ul><h1 id=2022-02-06>2022-02-06
+<a class=anchor href=#2022-02-06>#</a></h1><ul><li>[cloud] <a href=https://docs.gruntwork.io/docs/guides/production-framework/>https://docs.gruntwork.io/docs/guides/production-framework/</a></li></ul><h1 id=2022-02-02>2022-02-02
+<a class=anchor href=#2022-02-02>#</a></h1><ul><li>[git] <a href=https://developer.ibm.com/tutorials/d-learn-workings-git>https://developer.ibm.com/tutorials/d-learn-workings-git</a></li></ul><h1 id=2021-12-02>2021-12-02
+<a class=anchor href=#2021-12-02>#</a></h1><ul><li>[docker] <a href=http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/>http://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/</a></li></ul><h1 id=2021-11-26>2021-11-26
+<a class=anchor href=#2021-11-26>#</a></h1><ul><li>[cs] <a href=https://teachyourselfcs.com/>https://teachyourselfcs.com/</a></li></ul><h1 id=2021-11-21>2021-11-21
+<a class=anchor href=#2021-11-21>#</a></h1><ul><li>[dev] <a href=https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html>https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html</a></li></ul><h1 id=2021-11-18>2021-11-18
+<a class=anchor href=#2021-11-18>#</a></h1><ul><li>[software] <a href=https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/>https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/</a></li><li>[vim] <a href=https://www.notonlycode.org/neovim-lua-config/>https://www.notonlycode.org/neovim-lua-config/</a></li><li>[sre] <a href=https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/>https://ervinbarta.com/2021/10/19/slo-alerting-for-mortals/</a></li></ul><h1 id=2021-11-16>2021-11-16
+<a class=anchor href=#2021-11-16>#</a></h1><ul><li>[prometheus] <a href=https://prometheus.io/blog/2021/11/16/agent/>https://prometheus.io/blog/2021/11/16/agent/</a></li></ul><h1 id=2021-05-20>2021-05-20
+<a class=anchor href=#2021-05-20>#</a></h1><ul><li>[http] <a href=https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/>https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/</a></li></ul><h1 id=2021-05-16>2021-05-16
+<a class=anchor href=#2021-05-16>#</a></h1><ul><li>[k8s] <a href=https://www.infracloud.io/blogs/using-coredns-effectively-kubernetes/>https://www.infracloud.io/blogs/using-coredns-effectively-kubernetes/</a></li></ul><h1 id=2021-05-11>2021-05-11
+<a class=anchor href=#2021-05-11>#</a></h1><ul><li>[jenkins] <a href=https://plugins.jenkins.io/parameterized-scheduler>https://plugins.jenkins.io/parameterized-scheduler</a></li><li>[terraform] <a href=https://github.com/cloudskiff/driftctl>https://github.com/cloudskiff/driftctl</a></li></ul><h1 id=2021-04-07>2021-04-07
+<a class=anchor href=#2021-04-07>#</a></h1><ul><li>[python] <a href=https://antonz.org/python-packaging/>https://antonz.org/python-packaging/</a></li></ul><h1 id=2021-03-15>2021-03-15
+<a class=anchor href=#2021-03-15>#</a></h1><ul><li>[terraform] <a href=https://www.hashicorp.com/blog/testing-hashicorp-terraform>https://www.hashicorp.com/blog/testing-hashicorp-terraform</a></li></ul><h1 id=2021-03-13>2021-03-13
+<a class=anchor href=#2021-03-13>#</a></h1><ul><li>[security] <a href=https://cheatsheetseries.owasp.org/index.html>https://cheatsheetseries.owasp.org/index.html</a></li></ul><h1 id=2021-03-04>2021-03-04
+<a class=anchor href=#2021-03-04>#</a></h1><ul><li>[postgresql] <a href=https://blog.arctype.com/postgres-notify-for-real-time-dashboards/>https://blog.arctype.com/postgres-notify-for-real-time-dashboards/</a></li></ul><h1 id=2021-03-01>2021-03-01
+<a class=anchor href=#2021-03-01>#</a></h1><ul><li>[assembly] <a href=https://wolchok.org/posts/how-to-read-assembly-language/>https://wolchok.org/posts/how-to-read-assembly-language/</a></li><li>[http] <a href=https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/>https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/</a></li><li>[k8s] <a href=https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3>https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3</a></li></ul><h1 id=2021-02-24>2021-02-24
+<a class=anchor href=#2021-02-24>#</a></h1><ul><li>[jenkins] <a href=https://www.jvt.me/posts/2021/02/23/getting-started-jobdsl-standardised/>https://www.jvt.me/posts/2021/02/23/getting-started-jobdsl-standardised/</a></li></ul><h1 id=2021-02-21>2021-02-21
+<a class=anchor href=#2021-02-21>#</a></h1><ul><li>[linux] <a href=https://jvns.ca/blog/2016/10/10/what-even-is-a-container/>https://jvns.ca/blog/2016/10/10/what-even-is-a-container/</a></li><li>[k8s] <a href=https://learnk8s.io/sidecar-containers-patterns>https://learnk8s.io/sidecar-containers-patterns</a></li><li>[python] <a href=https://farid.berkeley.edu/downloads/tutorials/learnPython/>https://farid.berkeley.edu/downloads/tutorials/learnPython/</a></li></ul><h1 id=2021-02-16>2021-02-16
+<a class=anchor href=#2021-02-16>#</a></h1><ul><li>[k8s] [prom] <a href=https://sysdig.com/blog/kubernetes-monitoring-prometheus/>https://sysdig.com/blog/kubernetes-monitoring-prometheus/</a></li></ul><h1 id=2021-02-14>2021-02-14
+<a class=anchor href=#2021-02-14>#</a></h1><ul><li>[k8s] <a href=https://loft.sh/blog/kubernetes-liveness-probes-examples-common-pitfalls/index-1/>https://loft.sh/blog/kubernetes-liveness-probes-examples-common-pitfalls/index-1/</a></li><li>[sre] <a href=https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/>https://www.honeycomb.io/blog/fostering-resilient-organizations-why-i-joined-honeycomb/</a></li><li>[cks] <a href=https://gumroad.com/l/cksbook>https://gumroad.com/l/cksbook</a></li><li>[py] <a href=https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/>https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/</a></li><li>[sre] <a href=https://linkedin.github.io/school-of-sre/>https://linkedin.github.io/school-of-sre/</a></li><li>[outage] <a href=https://slack.engineering/slacks-outage-on-january-4th-2021/>https://slack.engineering/slacks-outage-on-january-4th-2021/</a></li><li>[k8s] [sec] <a href=https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation>https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation</a></li><li>[tf] <a href=https://medium.com/last9/infrastructure-as-code-as-software-a5e4b2b93e8e>https://medium.com/last9/infrastructure-as-code-as-software-a5e4b2b93e8e</a></li><li>[linux] <a href=https://www.redhat.com/sysadmin/cgroups-part-one>https://www.redhat.com/sysadmin/cgroups-part-one</a></li><li>[py] <a href=https://www.sanjaysiddhanti.com/2020/04/08/s3testing/>https://www.sanjaysiddhanti.com/2020/04/08/s3testing/</a></li><li>[linux] <a href=https://blog.stackpath.com/bpf-hook-points-part-1/>https://blog.stackpath.com/bpf-hook-points-part-1/</a></li><li>[docs] <a href=https://developers.google.com/tech-writing/overview>https://developers.google.com/tech-writing/overview</a></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>
