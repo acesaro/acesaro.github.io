@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2022-03-15
+- [swe] https://austinhenley.com/blog/sestudyguide.html
+
 # 2022-02-27
 - [prometheus] https://levelup.gitconnected.com/transforming-remote-json-into-prometheus-metrics-334d772df38a
 
