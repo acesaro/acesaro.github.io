@@ -2,6 +2,14 @@
 title: "Today I Learned (TIL)"
 draft: false
 ---
+# 2022-04-06
+
+* [shell] Generate a randomized, alphanumeric string
+
+    ```
+    $ cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | head -c 20
+    ```
+
 # 2022-02-08
 
 * [vim] Updating an environment variable in a currently running vim session.
