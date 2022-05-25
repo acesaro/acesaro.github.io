@@ -2,6 +2,9 @@
 title: "Sites"
 draft: false
 ---
+# 2022-05-25
+- [git] https://andrewlock.net/reducing-the-size-of-a-git-repository-with-git-replace/
+
 # 2022-03-15
 - [swe] https://austinhenley.com/blog/sestudyguide.html
 
