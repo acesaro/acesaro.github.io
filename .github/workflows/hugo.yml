@@ -19,12 +19,12 @@ jobs:
         uses: acesaro/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true
 
       - name: Build kb
         working-directory: ./_kb_src
         run: hugo --minify -D -d ../kb
-        
+
       - name: Build blog
         working-directory: ./_blog_src
         run: hugo --minify -D -d ../blog
