@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Tony Cesaro  - Systems/Software Engineer</title>
+	<style>
+  	:root {
+  --accent:#BC1B39;
+  --anchor-color: #2C85B1;
+  --blue:#2C85B1;
+  --copy-color-light: #666666;
+  --copy-color: #242424;
+  --grey:#999999;
+  --light-grey:#ededed;
+  --white:#FFFFFF;
+  --base-font-size: 12pt;
+  --spacing-double: 1rem;
+  --spacing-small: .1rem;
+  --spacing: .5rem;
+}
+@media (min-width: 567px) {
+  :root {
+    --spacing-double: 1.5rem;
+    --spacing-small: .25rem;
+    --spacing: .75rem;
+  }
+}
+@media print {
+  :root {
+    --anchor-color: #000000;
+    --base-font-size: 9pt;
+    --copy-color-light: #000000;
+    --copy-color: #000000;
+  }
+}
+
+body {
+  color: var(--copy-color);
+  display: flex;
+  font: var(--base-font-size) "Open Sans", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  line-height: 1.25;
+  -webkit-print-color-adjust: exact;
+}
+
+em {
+  color: var(--grey);
+}
+
+p {
+  font-size: 90%;
+}
+
+a {
+  color: var(--anchor-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+section {
+  margin: var(--spacing) 0 var(--spacing-double);
+}
+
+blockquote {
+  margin-bottom: 0 0 var(--spacing);
+}
+
+#resume {
+  background: var(--white);
+  margin: var(--spacing) var(--spacing-double);
+  max-width: 760px;
+}
+
+section.heading header h1 {
+  font-size: 180%;
+  font-weight: 300;
+  margin: 0;
+}
+section.heading header h2 {
+  font-size: 140%;
+  font-weight: 400;
+  margin: 0;
+}
+section.heading header h2::after {
+  display: none;
+}
+section.heading header .contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading header .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+section.heading header address {
+  font-size: 90%;
+  font-style: normal;
+  padding-bottom: var(--spacing);
+}
+section.heading .profiles {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading .profiles {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+section.heading .profiles .profile.print {
+  display: none;
+}
+@media print {
+  section.heading .profiles .profile.print {
+    display: block;
+  }
+}
+section.heading .profiles strong {
+  margin: 0 var(--spacing-small) 0 0;
+}
+section.heading .profiles span {
+  margin: 0 var(--spacing-double) 0 0;
+}
+
+section.experience .item {
+  border-bottom: 1px solid var(--light-grey);
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+}
+section.experience .item:last-child {
+  border-bottom: none;
+}
+section.experience .item header a,
+section.experience .item header h3 {
+  color: var(--copy-color);
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (max-width: 566px) {
+  section.experience .item header .subhead {
+    flex-direction: column;
+    margin-bottom: var(--spacing-double);
+  }
+}
+section.experience .item .summary p {
+  margin-top: var(--spacing);
+}
+section.experience .item .summary p:first-child {
+  margin-top: var(--spacing-small);
+}
+section.experience .item .summary p:last-child {
+  margin-bottom: var(--spacing-small);
+}
+section.experience .item .position {
+  color: var(--copy-color-light);
+  font-size: 100%;
+  font-weight: 500;
+  margin: var(--spacing-small) 0;
+}
+section.experience .item .startDate,
+section.experience .item .endDate {
+  color: var(--grey);
+}
+section.skills .item {
+  margin: 0;
+  padding: 0 0 var(--spacing);
+}
+section.skills .item:first-child {
+  margin-top: var(--spacing);
+}
+section.skills .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.skills .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.skills .item .keywords {
+  display: inline-block;
+  font-size: 90%;
+  vertical-align: top;
+}
+
+section.volunteering .item .position {
+  font-weight: 600;
+}
+section.volunteering .item header .subhead {
+  margin-top: var(--spacing);
+}
+section.projects .item strong {
+  color: var(--copy-color-light);
+  font-weight: 600;
+  display: inline-block;
+  padding-top: var(--spacing);
+}
+section.awards .item .title {
+  font-weight: 600;
+}
+section.publications .item .name {
+  font-weight: 600;
+}
+section.languages .language-item {
+  align-items: baseline;
+  display: flex;
+  justify-content: start;
+}
+section.languages .language-item:first-child {
+  margin-top: var(--spacing);
+}
+section.languages .language-item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.languages .language-item .language {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.languages .language-item .fluency {
+  color: var(--copy-color-light);
+  font-style: italic;
+}
+
+section.interests .item {
+  margin-bottom: var(--spacing);
+}
+section.interests .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.interests .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+section.references .item blockquote {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: var(--spacing);
+}
+section.references .item .name {
+  color: var(--copy-color-light);
+}
+
+section h2 {
+  color: var(--accent);
+  font-size: 135%;
+  font-weight: 400;
+  margin: 0 0 var(--spacing-double);
+  position: relative;
+  text-transform: uppercase;
+}
+section h2::after {
+  background: var(--accent);
+  bottom: -10px;
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 2.5rem;
+}
+section header h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+section.experience .item .highlights, section.volunteering .highlights, section.projects .highlights,
+section.projects .keywords,
+section.projects .roles, section.education .item .courses {
+  font-size: 90%;
+  line-height: 1.3;
+  list-style: square;
+  margin: var(--spacing-small) 0 var(--spacing);
+  padding-left: var(--spacing-double);
+}
+
+section.experience .item, section.volunteering .item, section.projects .item, section.education .item, section.certificates .item, section.awards .item, section.publications .item, section.interests .item, section.references .item {
+  page-break-inside: avoid;
+}
+
+@media print {
+  section.heading .profiles .profile:not(.print), section.publications .item .website {
+    display: none;
+  }
+}
+
+section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.certificates .item header, section.awards .item header, section.publications .item .subhead {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 567px) {
+  section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.certificates .item header, section.awards .item header, section.publications .item .subhead {
+    flex-direction: row;
+  }
+}
+
+@media print {
+  body {
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	
+	</head>
+  <body>	
+    <div id="resume">
+      <section id="heading" class="heading">
+        <header>
+          <h1>
+            Tony Cesaro
+          </h1>
+          <h2>Systems/Software Engineer</h2>
+          <div class="summary"><p>Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.</p><p>As a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations. I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.</p></div>
+          <div class="contact">
+            <span class="contact-detail"><a href="mailto:acesaro@gmail.com">acesaro@gmail.com</a></span>
+            <span class="contact-detail"><a href="https://amcpu.org" target="external">https://amcpu.org</a></span>
+          </div>
+          <address>
+            <span class="address-detail">Orlando,</span>
+            <span class="address-detail">Florida</span>
+            <span class="address-detail">US</span>
+          </address>
+        </header>
+      
+      </section>
+      <section id="experience" class="experience">
+        <section class="item">
+          <h2>Experience</h2>
+          <header>
+            <h3 class="name">Electronic Arts - EA Sports DevOps</h3>
+            <div class="subhead">
+            <span class="position">Technical Lead</span>
+                  <small class="dates">Feb 2020
+              - Present</small>
+            </div>
+          </header>
+          <div class="summary"><p>Technical leadership of HD game server operations, including EA Sports FC, Madden NFL, NHL, and UFC. Developing and socializing vision of technical evolution to realize efficiencies between common operational tasks across various sub-teams. Working directly on developing automated solutions that reduce toil and potential human error for the wide range of operational responsibilities of the team.</p></div>
+          <ul class="highlights">
+            <li>Development of automated solutions involving Chef, Ansible, Kubernetes and custom Python code using cloud SDKs in support of the FC Ultimate Team server infrastructure migration from physical server hosting to public cloud.</li>
+            <li>Design and guidance of numerous source code repositories from Perforce to GitLab in support of the rich tooling ecosystem that was realized as a result.</li>
+            <li>Technical leadership and guidance to share personal experience in this technical domain, including mentorship, code reviews, pair programming and solutions design.</li>
+            <li>Development and guided adoption of a common Python project that is used to converge many code bases and future efforts into a consistent way of developing, testing and deploying.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Electronic Arts - EA Sports Mobile</h3>
+            <div class="subhead">
+            <span class="position">Senior Systems Engineer</span>
+                  <small class="dates">Dec 2015
+                  - Feb 2020</small>
+            </div>
+          </header>
+          <div class="summary"><p>Lead server operations Systems Engineer responsible for the live service infrastructure and supporting operational tools across 3 launched titles and 2 pending launch titles.</p></div>
+          <ul class="highlights">
+            <li>Successful launch of numerous game titles (and their yearly releases) including Madden NFL Mobile, NBA Live Mobile, FIFA Mobile.</li>
+            <li>Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Splunk, Logstash, Elasticsearch, Kibana, Grafana, Graphite, Prometheus, and Alertmanager.</li>
+            <li>Design and implementation of automated operations procedures such as infrastructure provisioning, software builds, deployments and stress testing utilizing Terraform, Ansible, Jenkins and custom Python software.</li>
+            <li>Dedicated complementary support to server Software Engineers through load testing efforts, including tools to analyze and profile results. Collaborated on designing cost-effective, scalable solutions that allowed significant concurrent usage spikes throughout the yearly cycle.</li>
+            <li>Migration of Madden Mobile server infrastructure from a physical to cloud hosting environment, including migration of customer data and greatly improved scalability.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Electronic Arts - EA Sports</h3>
+            <div class="subhead">
+            <span class="position">Systems Engineer</span>
+                  <small class="dates">Dec 2011
+                  - Feb 2019</small>
+            </div>
+          </header>
+          <div class="summary"><p>Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.</p></div>
+          <ul class="highlights">
+            <li>Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14.</li>
+            <li>Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Heka, Elasticsearch, Kibana, Graphite, and Riemann.</li>
+            <li>Implemented automation of software builds, deployments and other server operations tasks made accessible through a web interface to encourage self-service of game team software engineers.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Highwinds Network Group - CDN Operations</h3>
+            <div class="subhead">
+            <span class="position">Systems Engineer</span>
+                  <small class="dates">Jun 2011
+                  - Jun 2012</small>
+            </div>
+          </header>
+          <div class="summary"><p>Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.</p></div>
+          <ul class="highlights">
+            <li>Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents. This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.</li>
+            <li>Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.</li>
+            <li>Automation of commonly performed and complex tasks using bash, Perl and Python scripting.</li>
+            <li>Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">CenturyLink Corporation - Network Systems Management</h3>
+            <div class="subhead">
+            <span class="position">Technical Lead</span>
+                  <small class="dates">Feb 2006
+                  - Jun 2011</small>
+            </div>
+          </header>
+          <div class="summary"><p>Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems. Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems. Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.</p></div>
+          <ul class="highlights">
+            <li>Implementation of enterprise class LDAP infrastructure for a heterogeneous UNIX/Windows environment</li>
+            <li>Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy</li>
+            <li>Installation and configuration of a Zabbix monitoring system for all systems&#x27; surveillance</li>
+            <li>Development of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information</li>
+            <li>Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users</li>
+            <li>Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink.</li>
+          </ul>
+        </section>
+      </section>
+      <section id="skills" class="skills">
+        <div class="item">
+          <h2>Skills</h2>
+          <div class="name">Software Development</div>
+          <div class="keywords">
+            Build automation,
+            C,
+            C++,
+            Debugging,
+            Git,
+            Go,
+            HTML/CSS,
+            Java,
+            Javascript,
+            Lua,
+            Perforce,
+            Profiling,
+            Python,
+            Shell,
+            VS Code,
+            Vim
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Operating Systems, Cloud, Virtualization, Automation</div>
+          <div class="keywords">
+            AWS,
+            Ansible,
+            Chef,
+            GCP,
+            Kubernetes,
+            Linux,
+            Packer,
+            Solaris,
+            Terraform,
+            Windows Server
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Database</div>
+          <div class="keywords">
+            Elasticsearch,
+            MySQL,
+            Oracle 9i/10g/11g,
+            PostgreSQL,
+            Prometheus,
+            Redis,
+            Splunk,
+            SQL (language)
+          </div>
+        </div>
+      </section>
+      <section id="certificates" class="certificates">
+        <div class="item">
+          <h2>Certificates</h2>
+          <header>
+              <h3 class="name">Certified Kubernetes Administrator</h3>
+            <small class="dates">
+              <span class="startDate">Nov 2019</span>
+              <span class="endDate"> - Nov 2022</span>
+            </small>
+          </header>
+          <div class="issuer_container">
+            <span class="issuer">The Linux Foundation</span>
+            <span class="url_container">
+                  <a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka" target="external">https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka</a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="education">
+        <div class="item">
+          <h2>Education</h2>
+          <header>
+              <h3 class="name">University of Central Florida</h3>
+              <small class="dates">
+                <span class="startDate">Dec 2000</span>
+                <span class="endDate"> - Dec 2004</span>
+              </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Bachelor of Science</span>
+            <span class="area">Information Technology</span>
+            <br>
+            <strong>Courses</strong>
+            <ul class="courses">
+              <li>C Programming</li>
+              <li>Computer Architectures</li>
+              <li>Computer Science</li>
+              <li>Database Systems</li>
+              <li>Distributed Systems Programming</li>
+              <li>Information Theory</li>
+              <li>Network Lab</li>
+              <li>Network Security</li>
+              <li>Web Systems</li>
+              <li>Wide Area Networks</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <header>
+              <h3 class="name">University of Central Florida</h3>
+              <small class="dates">
+                <span class="startDate">Dec 2004</span>
+                <span class="endDate"> - Dec 2007</span>
+              </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Master of Science</span>
+            <span class="area">Management Information Systems</span>
+            <br>
+            <strong>Courses</strong>
+            <ul class="courses">
+              <li>Business Intelligence Systems</li>
+              <li>ERP Implementation</li>
+              <li>IT Project Management</li>
+              <li>Information Resource Management</li>
+              <li>Systems Analysis &amp; Design</li>
+              <li>Telecommunication Management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="languages" class="languages">
+        <div class="item">
+          <h2>Languages</h2>
+          <div class="language-item">
+            <span class="language">English:</span>
+            <span class="fluency">Native speaker</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="language-item">
+            <span class="language">Spanish:</span>
+            <span class="fluency">Limited working</span>
+          </div>
+        </div>
+      </section>
+      <section id="interests" class="interests">
+        <div class="item">
+          <h2>Interests</h2>
+          <span class="name">Music:</span>
+          <span class="keywords">
+            <span>Guitar</span>,
+            <span>Rock</span>,
+            <span>Jazz</span>,
+            <span>Classical</span>
+          </span>
+        </div>
+        <div class="item">
+          <span class="name">Cycling:</span>
+          <span class="keywords">
+            <span>Mountain biking</span>,
+            <span>Repair/maintenance</span>
+          </span>
+        </div>
+      </section>
+    </div>
+	</body>
+</html>

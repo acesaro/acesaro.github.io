@@ -4,7 +4,7 @@
     "label": "Systems/Software Engineer",
     "email": "acesaro@gmail.com",
     "url": "https://amcpu.org",
-    "summary": "Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.\n\nAs a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction.  I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations.  I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.",
+    "summary": "Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.\n\nAs a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations. I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.",
     "location": {
       "city": "Orlando",
       "countryCode": "US",
@@ -16,7 +16,7 @@
       "name": "Electronic Arts - EA Sports DevOps",
       "position": "Technical Lead",
       "startDate": "2020-03",
-      "summary": "Technical leadership of HD game title server operations, including EA Sports FC, Madden NFL, NHL, and UFC.  Developing and socializing vision of technical evolution to realize efficiencies between common operational tasks across various sub-teams. Working directly on developing automated solutions that reduce toil and potential human error for the wide range of operational responsibilities of the team.",
+      "summary": "Technical leadership of HD game server operations, including EA Sports FC, Madden NFL, NHL, and UFC. Developing and socializing vision of technical evolution to realize efficiencies between common operational tasks across various sub-teams. Working directly on developing automated solutions that reduce toil and potential human error for the wide range of operational responsibilities of the team.",
       "highlights": [
         "Development of automated solutions involving Chef, Ansible, Kubernetes and custom Python code using cloud SDKs in support of the FC Ultimate Team server infrastructure migration from physical server hosting to public cloud.",
         "Design and guidance of numerous source code repositories from Perforce to GitLab in support of the rich tooling ecosystem that was realized as a result.",
@@ -32,7 +32,7 @@
       "summary": "Lead server operations Systems Engineer responsible for the live service infrastructure and supporting operational tools across 3 launched titles and 2 pending launch titles.",
       "highlights": [
         "Successful launch of numerous game titles (and their yearly releases) including Madden NFL Mobile, NBA Live Mobile, FIFA Mobile.",
-        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Splunk, Logsearch, Elasticsearch, Kibana, Grafana, Graphite, Prometheus, Riemann and Bosun",
+        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Splunk, Logstash, Elasticsearch, Kibana, Grafana, Graphite, Prometheus, and Alertmanager.",
         "Design and implementation of automated operations procedures such as infrastructure provisioning, software builds, deployments and stress testing utilizing Terraform, Ansible, Jenkins and custom Python software.",
         "Dedicated complementary support to server Software Engineers through load testing efforts, including tools to analyze and profile results. Collaborated on designing cost-effective, scalable solutions that allowed significant concurrent usage spikes throughout the yearly cycle.",
         "Migration of Madden Mobile server infrastructure from a physical to cloud hosting environment, including migration of customer data and greatly improved scalability."
@@ -45,8 +45,8 @@
       "endDate": "2019-03",
       "summary": "Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.",
       "highlights": [
-        "Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14",
-        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Logsearch, Heka, Elasticsearch, Kibana, Graphite, Prometheus, Riemann and Bosun",
+        "Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14.",
+        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Heka, Elasticsearch, Kibana, Graphite, and Riemann.",
         "Implemented automation of software builds, deployments and other server operations tasks made accessible through a web interface to encourage self-service of game team software engineers."
       ]
     },
@@ -57,7 +57,7 @@
       "endDate": "2012-07",
       "summary": "Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.",
       "highlights": [
-        "Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents.  This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.",
+        "Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents. This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.",
         "Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.",
         "Automation of commonly performed and complex tasks using bash, Perl and Python scripting.",
         "Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl."
@@ -68,7 +68,7 @@
       "position": "Technical Lead",
       "startDate": "2006-03",
       "endDate": "2011-07",
-      "summary": "Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems. Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems.  Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.",
+      "summary": "Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems. Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems. Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.",
       "highlights": [
         "Implementation of enterprise class LDAP infrastructure for a heterogeneous UNIX/Windows environment",
         "Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy",
