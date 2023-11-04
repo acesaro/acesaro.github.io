@@ -3,6 +3,7 @@
     "name": "Tony Cesaro",
     "label": "Systems/Software Engineer",
     "email": "acesaro@gmail.com",
+    "image": "https://amcpu.org/img/acesaro.jpeg",
     "url": "https://amcpu.org",
     "summary": "Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.\n\nAs a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations. I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.",
     "location": {
@@ -27,7 +28,7 @@
     {
       "name": "Electronic Arts - EA Sports Mobile",
       "position": "Senior Systems Engineer",
-      "startDate": "2016",
+      "startDate": "2015-03",
       "endDate": "2020-03",
       "summary": "Lead server operations Systems Engineer responsible for the live service infrastructure and supporting operational tools across 3 launched titles and 2 pending launch titles.",
       "highlights": [
@@ -41,8 +42,8 @@
     {
       "name": "Electronic Arts - EA Sports",
       "position": "Systems Engineer",
-      "startDate": "2012",
-      "endDate": "2019-03",
+      "startDate": "2012-07",
+      "endDate": "2015-03",
       "summary": "Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.",
       "highlights": [
         "Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14.",
