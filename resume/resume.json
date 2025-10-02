@@ -1,232 +1,232 @@
 {
-    "basics": {
-        "name": "Tony Cesaro",
-        "label": "Systems/Software Engineer",
-        "email": "acesaro@gmail.com",
-        "image": "https://amcpu.org/img/acesaro.jpeg",
-        "url": "https://amcpu.org",
-        "summary": "Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.\n\nAs a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations. I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.",
-        "location": {
-            "city": "Orlando",
-            "countryCode": "US",
-            "region": "Florida"
-        }
+  "basics": {
+    "name": "Tony Cesaro",
+    "label": "Systems/Software Engineer",
+    "email": "acesaro@gmail.com",
+    "image": "https://amcpu.org/img/acesaro.jpeg",
+    "url": "https://amcpu.org",
+    "summary": "Experienced systems/DevOps/software engineer that has supported the infrastructure of numerous public-facing live services, developed and operated supporting tools, and lead engineering teams to operational success.\n\nAs a distributed systems and Internet services engineer I have worked to drive the value of technology resources by enhancing business processes, product offerings and customer satisfaction. I focus my efforts in distributed computer systems architecture, operational tooling, scalability, security and automated operations. I have a passion for life-long learning along with an interest in emerging technologies and their application to business success.",
+    "location": {
+      "city": "Orlando",
+      "countryCode": "US",
+      "region": "Florida"
+    }
+  },
+  "work": [
+    {
+      "name": "Electronic Arts - EAIT Game Creation Engineering",
+      "position": "Senior Software Engineer in Data",
+      "startDate": "2024-02",
+      "summary": "Initial and lead engineer responsible for designing, building and operating a new data analytics platform for the Game Creation organization. This new internal product supports all other Game Creation products' data ingestion, reporting and alerting needs with a reliable, scalable and performant analytics infrastructure hosted on Azure cloud services.",
+      "highlights": [
+        "Managed the initial implementation executed by a third party and effectively documented and handed over the results to internal ongoing maintenance.",
+        "Performed requirements analysis with stakeholders to identify the most useful components of the initial implementation to keep for largest return on investment.",
+        "Designed a common set of patterns for ingesting, storing and reporting utilizing components such as Azure Event Hubs (Kafka), Azure Data Explorer, Azure Data Lake Storage, and Azure Managed Grafana.",
+        "Fully documented provisioning and operational support processes for future reference and for on-boarding additional team members efficiently to scale with the demand of product teams as adoption grew.",
+        "Evangelized benefits and provided guidance for effective use of observability tools and techniques to drive measurement and reporting throughout the various phases of solutions development, operations, and incident detection/response."
+      ]
     },
-    "work": [
-        {
-            "name": "Electronic Arts - EAIT Game Creation Engineering",
-            "position": "Senior Software Engineer in Data",
-            "startDate": "2024-02",
-            "summary": "Initial and lead engineer responsible for designing, building and operating a new data analytics platform for the Game Creation organization. This new internal product supports all other Game Creation products' data ingestion, reporting and alerting needs with a reliable, scalable and performant analytics infrastructure hosted on Azure cloud services.",
-            "highlights": [
-                "Managed the initial implementation executed by a third party and effectively documented and handed over the results to internal ongoing maintenance.",
-                "Performed requirements analysis with stakeholders to identify the most useful components of the initial implementation to keep for largest return on investment.",
-                "Designed a common set of patterns for ingesting, storing and reporting utilizing components such as Azure Event Hubs (Kafka), Azure Data Explorer, Azure DataLake Storage, and Azure Managed Grafana.",
-                "Fully documented provisioning and operational support processes for future reference and for onboarding additional team members efficiently to scale with the demand of product teams as adoption grew.",
-                "Evagelized benefits and provided guidance for effective use of observability tools and techniques to drive measurement and reporting throughout the various phases of solutions development, operations, and incident detection/response."
-            ]
-        },
-        {
-            "name": "Electronic Arts - EA Sports DevOps",
-            "position": "Technical Lead",
-            "startDate": "2020-03",
-            "endDate": "2024-01",
-            "summary": "Technical leadership of HD game server operations, including EA Sports FC, Madden NFL, NHL, and UFC. Developing and socializing vision of technical evolution to realize efficiencies between common operational tasks across various sub-teams. Working directly on developing automated solutions that reduce toil and potential human error for the wide range of operational responsibilities of the team.",
-            "highlights": [
-                "Development of automated solutions involving Chef, Ansible, Kubernetes and custom Python code using cloud SDKs in support of the FC Ultimate Team server infrastructure migration from physical server hosting to public cloud.",
-                "Migration of various workloads from physical server to Kubernetes hosting as part of a cloud migration effort.",
-                "Design and guidance of migrating numerous source code repositories from Perforce to GitLab in support of the rich tooling ecosystem that was realized as a result.",
-                "Technical leadership and guidance to share personal experience in this technical domain, including mentorship, code reviews, pair programming and solutions design.",
-                "Development and guided adoption of a common Python project that is used to converge many code bases and future efforts into a consistent way of developing, testing and deploying."
-            ]
-        },
-        {
-            "name": "Electronic Arts - EA Sports Mobile",
-            "position": "Senior Systems Engineer",
-            "startDate": "2015-03",
-            "endDate": "2020-03",
-            "summary": "Lead server operations Systems Engineer responsible for the live service infrastructure and supporting operational tools across 3 launched titles and 2 pending launch titles.",
-            "highlights": [
-                "Successful launch of numerous game titles (and their yearly releases) including Madden NFL Mobile, NBA Live Mobile, FIFA Mobile. This support included a large MySQL user data migration for each per title-year.",
-                "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Splunk, Logstash, Elasticsearch, Kibana, Grafana, Graphite, Prometheus, and Alertmanager.",
-                "Design and implementation of automated operations procedures such as infrastructure provisioning, software builds, deployments and stress testing utilizing Terraform, Ansible, Jenkins and custom Python software.",
-                "Dedicated complementary support to server Software Engineers through load testing efforts, including tools to analyze and profile results. Collaborated on designing cost-effective, scalable solutions that allowed significant concurrent usage spikes throughout the yearly cycle.",
-                "Migration of Madden Mobile server infrastructure from a physical to cloud hosting environment, including migration of customer data and greatly improved scalability."
-            ]
-        },
-        {
-            "name": "Electronic Arts - EA Sports",
-            "position": "Systems Engineer",
-            "startDate": "2012-07",
-            "endDate": "2015-03",
-            "summary": "Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.",
-            "highlights": [
-                "Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14.",
-                "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Heka, Elasticsearch, Kibana, Graphite, and Riemann.",
-                "Implemented automation of software builds, deployments and other server operations tasks made accessible through a web interface to encourage self-service of game team software engineers."
-            ]
-        },
-        {
-            "name": "Highwinds Network Group - CDN Operations",
-            "position": "Systems Engineer",
-            "startDate": "2011-07",
-            "endDate": "2012-07",
-            "summary": "Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.",
-            "highlights": [
-                "Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents. This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.",
-                "Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.",
-                "Automation of commonly performed and complex tasks using bash, Perl and Python scripting.",
-                "Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl."
-            ]
-        },
-        {
-            "name": "CenturyLink Corporation - Network Systems Management",
-            "position": "Technical Lead",
-            "startDate": "2006-03",
-            "endDate": "2011-07",
-            "summary": "Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems. Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems. Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.",
-            "highlights": [
-                "Implementation of enterprise class LDAP infrastructure for a heterogeneous UNIX/Windows environment",
-                "Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy",
-                "Installation and configuration of a Zabbix monitoring system for all systems' surveillance",
-                "Development of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information",
-                "Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users",
-                "Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "University of Central Florida",
-            "url": "https://ucf.edu",
-            "area": "Information Technology",
-            "studyType": "Bachelor of Science",
-            "startDate": "2001",
-            "endDate": "2005",
-            "courses": [
-                "C Programming",
-                "Computer Architectures",
-                "Computer Science",
-                "Database Systems",
-                "Distributed Systems Programming",
-                "Information Theory",
-                "Network Lab",
-                "Network Security",
-                "Web Systems",
-                "Wide Area Networks"
-            ]
-        },
-        {
-            "institution": "University of Central Florida",
-            "url": "https://ucf.edu",
-            "area": "Management Information Systems",
-            "studyType": "Master of Science",
-            "startDate": "2005",
-            "endDate": "2008",
-            "courses": [
-                "Business Intelligence Systems",
-                "ERP Implementation",
-                "IT Project Management",
-                "Information Resource Management",
-                "Systems Analysis & Design",
-                "Telecommunication Management"
-            ]
-        }
-    ],
-    "certificates": [
-        {
-            "name": "Certified Kubernetes Administrator",
-            "startDate": "2019-11-06",
-            "endDate": "2022-11-06",
-            "issuer": "The Linux Foundation",
-            "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Software Development",
-            "keywords": [
-                "Build automation",
-                "C",
-                "C++",
-                "Debugging",
-                "Git",
-                "GitLab",
-                "GitHub Copilot",
-                "Go",
-                "HTML/CSS",
-                "Java",
-                "Javascript",
-                "Lua",
-                "Perforce",
-                "Profiling",
-                "Python",
-                "Shell",
-                "VS Code",
-                "Vim"
-            ]
-        },
-        {
-            "name": "Operating Systems, Cloud, Virtualization, Automation",
-            "keywords": [
-                "AWS",
-                "Ansible",
-                "Azure",
-                "Azure Event Hubs / Kafka",
-                "Chef",
-                "Docker",
-                "GCP",
-                "Grafana",
-                "Kubernetes",
-                "Linux",
-                "Packer",
-                "Solaris",
-                "Terraform",
-                "Windows Server"
-            ]
-        },
-        {
-            "name": "Database",
-            "keywords": [
-                "Azure Data Explorer/Kusto",
-                "Elasticsearch",
-                "KQL (language)",
-                "MySQL",
-                "Oracle 9i/10g/11g",
-                "PostgreSQL",
-                "Prometheus",
-                "Redis",
-                "Splunk",
-                "SQL (language)"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "English",
-            "fluency": "Native speaker"
-        },
-        {
-            "language": "Spanish",
-            "fluency": "Limited working"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Music",
-            "keywords": [
-                "Guitar",
-                "Rock",
-                "Jazz",
-                "Classical"
-            ]
-        },
-        {
-            "name": "Cycling",
-            "keywords": [
-                "Mountain biking",
-                "Repair/maintenance"
-            ]
-        }
-    ]
+    {
+      "name": "Electronic Arts - EA Sports DevOps",
+      "position": "Technical Lead",
+      "startDate": "2020-03",
+      "endDate": "2024-01",
+      "summary": "Technical leadership of HD game server operations, including EA Sports FC, Madden NFL, NHL, and UFC. Developing and socializing vision of technical evolution to share common operational tasks across various sub-teams. Working directly on developing automated solutions that reduce toil and potential human error for the wide range of operational responsibilities of the team.",
+      "highlights": [
+        "Development of automated solutions involving Chef, Ansible, Kubernetes and custom Python code using cloud SDKs in support of the FC Ultimate Team server infrastructure migration from physical server hosting to public cloud.",
+        "Migration of various workloads from physical server to Kubernetes hosting as part of a cloud migration effort.",
+        "Design and guidance of migrating numerous source code repositories from Perforce to GitLab in support of the rich tooling ecosystem that was realized as a result.",
+        "Technical leadership and guidance to share personal experience in this technical domain, including mentorship, code reviews, pair programming and solutions design.",
+        "Development and guided adoption of a common Python project that is used to converge many code bases and future efforts into a consistent way of developing, testing and deploying."
+      ]
+    },
+    {
+      "name": "Electronic Arts - EA Sports Mobile",
+      "position": "Senior Systems Engineer",
+      "startDate": "2015-03",
+      "endDate": "2020-03",
+      "summary": "Lead server operations Systems Engineer responsible for the live service infrastructure and supporting operational tools across 3 launched titles and 2 pending launch titles.",
+      "highlights": [
+        "Successful launch of numerous game titles (and their yearly releases) including Madden NFL Mobile, NBA Live Mobile, FIFA Mobile. This support included a large MySQL user data migration for each per title-year.",
+        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Splunk, Logstash, Elasticsearch, Kibana, Grafana, Graphite, Prometheus, and Alertmanager.",
+        "Design and implementation of automated operations procedures such as infrastructure provisioning, software builds, deployments and stress testing utilizing Terraform, Ansible, Jenkins and custom Python software.",
+        "Dedicated complementary support to server Software Engineers through load testing efforts, including tools to analyze and profile results. Collaborated on designing cost-effective, scalable solutions that allowed significant concurrent usage spikes throughout the yearly cycle.",
+        "Migration of Madden Mobile server infrastructure from a physical to cloud hosting environment, including migration of customer data and greatly improved scalability."
+      ]
+    },
+    {
+      "name": "Electronic Arts - EA Sports",
+      "position": "Systems Engineer",
+      "startDate": "2012-07",
+      "endDate": "2015-03",
+      "summary": "Responsible for systems planning and implementation supporting online gaming servers for Madden NFL, Madden NFL Mobile and NCAA Football game titles. Leading an operations support team with technical guidance and toolset design/development. Building and operating automated solutions for a variety of a heterogeneous Linux/Windows Cloud/Physical server infrastructures including fault monitoring, performance data collection/visualization and continuous integration/deployment automation. Making architectural design decisions for online gaming infrastructure through experience and solution evaluation/testing. Regularly analyzing usage demands and driving appropriate hardware scaling to control infrastructure costs. Recognizing opportunities to improve business process quality, agility and velocity through systems automation.",
+      "highlights": [
+        "Server operations support for successful launches of game titles including Madden NFL 13/25/15 and NCAA Football 14.",
+        "Design, development and implementation of a customized data collection, alerting, and visualization toolset utilizing technologies such as Heka, Elasticsearch, Kibana, Graphite, and Riemann.",
+        "Implemented automation of software builds, deployments and other server operations tasks made accessible through a web interface to encourage self-service of game team software engineers."
+      ]
+    },
+    {
+      "name": "Highwinds Network Group - CDN Operations",
+      "position": "Systems Engineer",
+      "startDate": "2011-07",
+      "endDate": "2012-07",
+      "summary": "Senior level systems engineer performing operations support and evolution of a multi-continent Content Delivery Network (CDN) including highly optimized HTTP-based multimedia caching and streaming media services.",
+      "highlights": [
+        "Provide tier 3 level support for a production Content Delivery Network with network POPs in three continents. This support includes troubleshooting customized HTTP software and load balancing technologies advertised to the Internet in an anycast routing configuration.",
+        "Support internal network management systems and AAA systems for centralized user management. Receive escalation of customer support requests for complex issues and work with software development team closely to provide diagnostic and debugging information to quickly solve issues to restore stable services.",
+        "Automation of commonly performed and complex tasks using bash, Perl and Python scripting.",
+        "Linux systems tuning including RAID storage/filesystems, TCP windowing behavior, and iptables/netfilter utilizing sysctl."
+      ]
+    },
+    {
+      "name": "CenturyLink Corporation - Network Systems Management",
+      "position": "Technical Lead",
+      "startDate": "2006-03",
+      "endDate": "2011-07",
+      "summary": "Lead operational support systems architect responsible for strategic planning, design, and development of the next generation of the OSS environment including network surveillance, trouble ticketing, inventory, troubleshooting toolset and provisioning systems. Coordinate and lead the end-to-end operation and evolution of a network management systems environment for a Fortune 500 communications company with responsibilities including systems architecture, hardware/OS/database/application installation and operations, and production support for all data network supporting systems. Develop and lead the practice of core system administration practices such as event management, change management, asset management and technical project management. Ensure that systems are developed with centralized access, integration, scalability, and reusability in mind.",
+      "highlights": [
+        "Implementation of enterprise class LDAP infrastructure for a heterogeneous UNIX/Windows environment",
+        "Implementation of a full network management system suite for a large state government contract including CA Spectrum, eHealth, SiteMinder, Cleverpath Portal, and BMC Remedy",
+        "Installation and configuration of a Zabbix monitoring system for all systems' surveillance",
+        "Development of an SNMP MIB from scratch to integrate two network management systems to forward traps from one to another, including relevant alarm information",
+        "Leadership of numerous unplanned system outages and planned maintenance outages through their full resolution and testing, ensuring full communication of expectations and maintenance window activities to key stakeholders and thousands of end-users",
+        "Lead architect and developer responsible for the integration of BMC Remedy and Netcool/OMNIbus systems between the legacy companies of EMBARQ and CenturyTel during the merger of CenturyLink."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Central Florida",
+      "url": "https://ucf.edu",
+      "area": "Information Technology",
+      "studyType": "Bachelor of Science",
+      "startDate": "2001",
+      "endDate": "2005",
+      "courses": [
+        "C Programming",
+        "Computer Architectures",
+        "Computer Science",
+        "Database Systems",
+        "Distributed Systems Programming",
+        "Information Theory",
+        "Network Lab",
+        "Network Security",
+        "Web Systems",
+        "Wide Area Networks"
+      ]
+    },
+    {
+      "institution": "University of Central Florida",
+      "url": "https://ucf.edu",
+      "area": "Management Information Systems",
+      "studyType": "Master of Science",
+      "startDate": "2005",
+      "endDate": "2008",
+      "courses": [
+        "Business Intelligence Systems",
+        "ERP Implementation",
+        "IT Project Management",
+        "Information Resource Management",
+        "Systems Analysis & Design",
+        "Telecommunication Management"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certified Kubernetes Administrator",
+      "startDate": "2019-11-06",
+      "endDate": "2022-11-06",
+      "issuer": "The Linux Foundation",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Build automation",
+        "C",
+        "C++",
+        "Debugging",
+        "Git",
+        "GitLab",
+        "GitHub Copilot",
+        "Go",
+        "HTML/CSS",
+        "Java",
+        "Javascript",
+        "Lua",
+        "Perforce",
+        "Profiling",
+        "Python",
+        "Shell",
+        "VS Code",
+        "Vim"
+      ]
+    },
+    {
+      "name": "Operating Systems, Cloud, Virtualization, Automation",
+      "keywords": [
+        "AWS",
+        "Ansible",
+        "Azure",
+        "Azure Event Hubs / Kafka",
+        "Chef",
+        "Docker",
+        "GCP",
+        "Grafana",
+        "Kubernetes",
+        "Linux",
+        "Packer",
+        "Solaris",
+        "Terraform",
+        "Windows Server"
+      ]
+    },
+    {
+      "name": "Database",
+      "keywords": [
+        "Azure Data Explorer/Kusto",
+        "Elasticsearch",
+        "KQL (language)",
+        "MySQL",
+        "Oracle 9i/10g/11g",
+        "PostgreSQL",
+        "Prometheus",
+        "Redis",
+        "Splunk",
+        "SQL (language)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Limited working"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Rock",
+        "Jazz",
+        "Classical"
+      ]
+    },
+    {
+      "name": "Cycling",
+      "keywords": [
+        "Mountain biking",
+        "Repair/maintenance"
+      ]
+    }
+  ]
 }
